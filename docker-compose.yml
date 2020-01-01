@@ -1,0 +1,16 @@
+version: "3"
+
+services:      
+  dataset:
+    image: data_img:last
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: dataset
+    command: sh setup.sh
+    volumes:
+      - .:/usr/src/dataset
+    environment:
+    - PYTHONUNBUFFERED=1
+
+    

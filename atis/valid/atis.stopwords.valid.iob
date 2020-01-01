@@ -1,0 +1,500 @@
+BOS want fly boston 838 arrive denver 1110 morning EOS	O O O B-fromloc.city_name B-depart_time.time O B-toloc.city_name B-arrive_time.time B-arrive_time.period_of_day atis_flight
+BOS show round trip flights houston las vegas EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like information flight denver san francisco united airlines EOS	O O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS coach flights dallas baltimore leaving august tenth returning august twelve EOS	O B-class_type O B-fromloc.city_name B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-return_date.month_name B-return_date.day_number atis_flight
+BOS flying boston bay area EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS okay tell flight cost denver atlanta EOS	O O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS montreal las vegas EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS earliest breakfast flight philadelphia fort worth EOS	O B-flight_mod B-meal_description O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights pittsburgh baltimore 10 2 pm EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_time.start_time B-depart_time.end_time I-depart_time.end_time atis_flight
+BOS latest flight departing boston san francisco EOS	O B-flight_mod O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights ontario florida EOS	O O B-fromloc.city_name B-toloc.state_name atis_flight
+BOS would like know first class fare flight baltimore denver EOS	O O O O B-class_type I-class_type O O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS okay sounds great let go atlanta april twenty one morning dallas least expensive fare one way EOS	O O O O O O B-fromloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day B-toloc.city_name B-cost_relative I-cost_relative O B-round_trip I-round_trip atis_flight
+BOS show prices flights atlanta washington dc EOS	O O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_airfare
+BOS flights cincinnati o'hare departing 718 american EOS	O O B-fromloc.city_name B-toloc.airport_name O B-depart_time.time B-airline_name atis_flight
+BOS interested flight pittsburgh atlanta EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS interested booking early morning flight dallas houston february twenty second returning late evening february twenty second EOS	O O O B-depart_time.period_of_day B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O O B-return_time.period_of_day B-return_date.month_name B-return_date.day_number I-return_date.day_number atis_flight
+BOS looking flight oakland denver stopover dallas fort worth EOS	O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name I-stoploc.city_name atis_flight
+BOS restriction ap68 EOS	O O B-restriction_code atis_restriction
+BOS types ground transportation available philadelphia EOS	O O O O O B-city_name atis_ground_service
+BOS abbreviation co mean EOS	O O B-airline_code O atis_abbreviation
+BOS first class flight american san francisco coming tuesday EOS	O B-class_type I-class_type O B-airline_name B-toloc.city_name I-toloc.city_name B-depart_date.date_relative B-depart_date.day_name atis_flight
+BOS please list flights baltimore san francisco fridays EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS flights return denver philadelphia saturday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS united airlines flying denver san francisco 10 type aircraft used EOS	O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_time.time O O O atis_flight
+BOS need flight atlanta baltimore nonstop arriving 7 pm please EOS	O O O B-fromloc.city_name B-toloc.city_name B-flight_stop O B-arrive_time.time I-arrive_time.time O atis_flight
+BOS cheapest round trip flights denver atlanta EOS	O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS continental fly denver san francisco EOS	O B-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like nonstop flight st. petersburg charlotte leaving afternoon EOS	O O O B-flight_stop O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-arrive_time.period_of_day atis_flight
+BOS continental airlines class service san francisco pittsburgh EOS	O B-airline_name I-airline_name O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS find cheapest flight boston washington EOS	O O B-cost_relative O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS well try last time tell kind aircraft united airlines flies denver san francisco 10 o'clock morning EOS	O O O O O O O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_time.time I-depart_time.time B-depart_time.period_of_day atis_aircraft
+BOS show northwest flights detroit st. petersburg EOS	O O B-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS morning flights pittsburgh atlanta wednesday EOS	O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS show flights first class san francisco pittsburgh leaving tuesday 8 o'clock morning 12 noon EOS	O O O B-class_type I-class_type B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time B-depart_time.period_of_day B-depart_time.time I-depart_time.time atis_flight
+BOS expensive way fly washington EOS	O I-cost_relative O O B-toloc.city_name atis_flight
+BOS show cheapest one way fare baltimore dallas EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS flights boston flights philadelphia boston monday EOS	O O B-fromloc.city_name O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list nonstop flights houston dallas arrive midnight EOS	O O B-flight_stop O B-fromloc.city_name B-toloc.city_name O B-arrive_time.period_of_day atis_flight
+BOS need flight seattle leaving baltimore making stop minneapolis EOS	O O O B-toloc.city_name O B-fromloc.city_name O O B-stoploc.city_name atis_flight
+BOS philadelphia san francisco please EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O atis_flight
+BOS airline stands dl EOS	O O O B-airline_code atis_airline
+BOS like cheap flight dallas baltimore january first EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS flights available friday san francisco boston EOS	O O O B-depart_date.day_name B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show saturday sunday flights milwaukee phoenix american airlines EOS	O O B-depart_date.day_name B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS flights st. paul kansas city friday lunch served EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-meal_description O atis_flight
+BOS flights toronto philadelphia EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights leave atlanta boston june twenty ninth afternoon EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day atis_flight
+BOS flights leave la guardia san jose arrive 10 pm EOS	O O O B-fromloc.airport_name I-fromloc.airport_name B-toloc.city_name I-toloc.city_name O B-arrive_time.time I-arrive_time.time atis_flight
+BOS list total number flights airports delta EOS	O O O O O O B-airline_name atis_quantity
+BOS tell time flight would leave atlanta boston afternoon EOS	O O B-flight_time O O O B-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day atis_flight_time
+BOS show united airlines flights denver baltimore leaving june fourteenth EOS	O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS please list flights dallas philadelphia monday EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS show flights cleveland memphis EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please give flights atlanta boston wednesday thursday EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.day_name atis_flight
+BOS show ground transportation philadelphia monday morning EOS	O O O O B-city_name B-day_name B-period_of_day atis_ground_service
+BOS delta leaves boston atlanta EOS	O B-airline_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS find earliest boston departure latest atlanta return trip ground maximum amount time atlanta return boston day EOS	O O B-flight_mod B-fromloc.city_name O B-flight_mod B-fromloc.city_name O O O O O O B-toloc.city_name O B-toloc.city_name B-return_date.date_relative atis_flight
+BOS show flights boston washington leaving july fifteen EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS would like time earliest flight morning philadelphia washington american airlines EOS	O O O B-flight_time B-flight_mod O B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_flight_time
+BOS show flights baltimore boston EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please list flight schedule baltimore san francisco friday nights EOS	O O O B-flight_time I-flight_time B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight_time
+BOS long trip philadelphia airport downtown philadelphia EOS	O O O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name atis_distance
+BOS sure like determine aircraft use july seventh leaving boston arriving atlanta july seventh EOS	O O O O O O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name B-arrive_date.month_name B-arrive_date.day_number atis_aircraft
+BOS baltimore philadelphia EOS	O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights fares atlanta philadelphia EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight#atis_airfare
+BOS united airlines flights stopping denver EOS	O B-airline_name I-airline_name O O B-stoploc.city_name atis_flight
+BOS flights available wednesday afternoon denver san francisco EOS	O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS round trip fares denver philadelphia less 1000 dollars EOS	O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-cost_relative B-fare_amount I-fare_amount atis_airfare
+BOS list first class flights baltimore denver EOS	O O B-class_type I-class_type O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS fares newark la monday wednesday EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.day_name atis_airfare
+BOS flights chicago kansas city EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS please show flights dallas atlanta monday EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS flights baltimore EOS	O O B-toloc.city_name atis_flight
+BOS show latest flight love field EOS	O O B-flight_mod O B-toloc.airport_name I-toloc.airport_name atis_flight
+BOS many delta night flights first class EOS	O O B-airline_name B-depart_time.period_of_day O B-class_type I-class_type atis_quantity
+BOS united airlines give flight times boston dallas EOS	O B-airline_name I-airline_name O B-flight_time I-flight_time B-fromloc.city_name B-toloc.city_name atis_flight_time
+BOS show ground transportation schedule philadelphia morning wednesday EOS	O O O O O B-city_name B-period_of_day B-day_name atis_ground_service
+BOS last flight boston atlanta EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights fly denver san francisco monday tuesday wednesday thursday friday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_date.day_name B-depart_date.day_name B-depart_date.day_name B-depart_date.day_name atis_flight
+BOS show flights boston philadelphia EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS also need go san francisco wednesday evening dallas EOS	O O O O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name atis_flight
+BOS kansas city salt lake city delta arrive around 8 pm tomorrow EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-airline_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time B-arrive_date.today_relative atis_flight
+BOS new york need rent car EOS	O B-city_name I-city_name O O B-transport_type atis_ground_service
+BOS show flights denver boston thursday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS would like book flight charlotte baltimore april eighth EOS	O O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS flights oakland san francisco january twenty first 1992 EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_date.year atis_flight
+BOS much limousine dallas fort worth international airport dallas EOS	O O B-transport_type B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name B-toloc.city_name atis_ground_fare
+BOS flight boston san francisco making stopover dallas fort worth EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O O B-stoploc.city_name I-stoploc.city_name I-stoploc.city_name atis_flight
+BOS time flights baltimore san francisco EOS	O B-flight_time O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight_time
+BOS las vegas phoenix departing morning EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_time.period_of_day atis_flight
+BOS many passengers boeing 737 hold EOS	O O O O B-aircraft_code O atis_capacity
+BOS would like flight leaves friday philadelphia dallas makes stop atlanta EOS	O O O O O B-depart_date.day_name B-fromloc.city_name B-toloc.city_name O O B-stoploc.city_name atis_flight
+BOS thank information would like information flight april sixteen atlanta philadelphia early morning EOS	O O O O O O O B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name B-toloc.city_name B-depart_time.period_mod B-depart_time.period_of_day atis_flight
+BOS time last flight washington san francisco EOS	O B-flight_time B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight_time
+BOS show least expensive flight leaving miami sunday 12 o'clock noon arriving cleveland EOS	O O B-cost_relative I-cost_relative O O B-fromloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time O B-toloc.city_name atis_flight
+BOS tomorrow morning pittsburgh atlanta EOS	O B-depart_date.today_relative B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name atis_flight
+BOS much cheapest flight denver pittsburgh EOS	O O B-cost_relative O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS cheapest one way fare pittsburgh atlanta traveling tuesday august twentieth EOS	O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number atis_airfare
+BOS show flights denver san diego leaving 5 pm EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-depart_time.time I-depart_time.time atis_flight
+BOS latest first class flight day leaving dallas san francisco EOS	O B-flight_mod B-class_type I-class_type O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show list flights pittsburgh baltimore august third EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS show morning flights san francisco pittsburgh EOS	O O B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights memphis tacoma EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list nonstop flights st. petersburg charlotte leave afternoon arrive soon 5 pm EOS	O O B-flight_stop O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-arrive_time.period_of_day O O B-arrive_time.time I-arrive_time.time atis_flight
+BOS show united flights denver san francisco september first 1991 EOS	O O B-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number B-depart_date.year atis_flight
+BOS wednesday morning flights pittsburgh boston EOS	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list american airlines milwaukee phoenix saturday EOS	O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS give flights december twenty seventh fares indianapolis orlando EOS	O O O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS okay right flight united airlines atlanta washington EOS	O O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights denver oakland arriving 12 1 o'clock EOS	O O O B-fromloc.city_name B-toloc.city_name O B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS list nonstop flights sunday tampa charlotte EOS	O O B-flight_stop O B-arrive_date.day_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like make one way flight boston atlanta EOS	O O O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flight afternoon philadelphia arrives evening denver EOS	O O B-depart_time.period_of_day B-fromloc.city_name O B-arrive_time.period_of_day B-toloc.city_name atis_flight
+BOS first flight atlanta baltimore serves lunch EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name O B-meal_description atis_flight
+BOS list list flights oakland denver EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please give flight boston atlanta 10 morning EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_time.time B-depart_time.period_of_day atis_flight
+BOS list nonstop flights early tuesday morning dallas atlanta EOS	O O B-flight_stop O B-arrive_time.period_mod B-arrive_date.day_name B-arrive_time.period_of_day B-fromloc.city_name B-toloc.city_name atis_flight
+BOS lowest round trip fare denver pittsburgh EOS	O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS please arrange flight denver san francisco us air EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS would like see information flights san francisco leaving 12 pm pittsburgh monday EOS	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-depart_time.time I-depart_time.time B-toloc.city_name B-depart_date.day_name atis_flight
+BOS show cheapest flight pittsburgh atlanta wednesday leaves noon serves breakfast EOS	O O B-cost_relative O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name O B-depart_time.time O B-meal_description atis_flight
+BOS earliest flight washington san francisco EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights pittsburgh los angeles leave thursday 5 pm EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time atis_flight
+BOS list flights new york miami tuesday nonstop cost less 466 dollars EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-flight_stop O B-cost_relative B-fare_amount I-fare_amount atis_flight
+BOS list flights denver san francisco denver philadelphia EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need find plane boston san francisco friday EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_aircraft
+BOS lax stand EOS	O B-airport_code O atis_abbreviation
+BOS show prices flights baltimore dallas july twenty ninth EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_airfare
+BOS flights available boston washington late monday evening early tuesday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS flights washington dc toronto EOS	O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS flights boston washington dc november eleventh 10 EOS	O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.month_name B-depart_date.day_number B-depart_time.time atis_flight
+BOS list flights denver philadelphia EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need list late afternoon flights st. louis chicago EOS	O O O B-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show airlines flights love field EOS	O O O O B-fromloc.airport_name I-fromloc.airport_name atis_airline
+BOS flights chicago indianapolis EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS yn stand EOS	O B-fare_basis_code O atis_abbreviation
+BOS shortest flights nashville st. petersburg EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS fares flights atlanta dfw EOS	O O O B-fromloc.city_name B-toloc.airport_code atis_airfare
+BOS list fares midway airlines flights boston philadelphia EOS	O O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS round trip fares denver philadelphia less 1000 dollars EOS	O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-cost_relative B-fare_amount I-fare_amount atis_airfare
+BOS continental flight leaving las vegas new york nonstop EOS	O B-airline_name O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-flight_stop atis_flight
+BOS need cost ticket going denver baltimore first class ticket united airlines EOS	O O O O O B-fromloc.city_name B-toloc.city_name B-class_type I-class_type O B-airline_name I-airline_name atis_airfare
+BOS show fares philadelphia san francisco thursday morning EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_airfare
+BOS show round trip flights phoenix salt lake city EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights denver baltimore arriving may tenth EOS	O O O B-fromloc.city_name B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number atis_flight
+BOS find cheapest one way fare boston san francisco EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS show flights boston san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS please show flights boston san francisco EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show airlines love field EOS	O O O B-fromloc.airport_name I-fromloc.airport_name atis_airline
+BOS show business class fares us air boston toronto EOS	O O B-class_type I-class_type O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS latest flight leaving las vegas ontario EOS	O B-flight_mod O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights las vegas phoenix EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS flight ua 270 denver philadelphia meal EOS	O O B-airline_code B-flight_number B-fromloc.city_name B-toloc.city_name B-meal atis_flight
+BOS nonstop flights available oakland philadelphia arriving 5 6 pm EOS	O B-flight_stop O O B-fromloc.city_name B-toloc.city_name O B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS give flights american airline philadelphia dallas EOS	O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show evening flights atlanta washington wednesdays EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS would like coach class seat flight leaving denver arriving atlanta EOS	O O O B-class_type I-class_type O O O B-fromloc.city_name O B-toloc.city_name atis_flight
+BOS list flights phoenix las vegas EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show qx fare flights atlanta oakland delta airlines EOS	O O B-fare_basis_code I-fare_basis_code O B-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS afternoon flights available denver dallas fort worth EOS	O B-depart_time.period_of_day O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS fares flights pittsburgh philadelphia EOS	O O O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS tell airline flies denver san francisco EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airline
+BOS many flights airline booking class k EOS	O O O O O O B-fare_basis_code atis_quantity
+BOS great want find april twentieth washington denver flight least expensive fare around 5 o'clock morning EOS	O O O O B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name B-toloc.city_name O B-cost_relative I-cost_relative O B-depart_time.time_relative B-depart_time.time I-depart_time.time B-depart_time.period_of_day atis_flight
+BOS show direct flights san francisco boston departing noon EOS	O O B-connect O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_time.time atis_flight
+BOS need flight thursday 8 oakland salt lake city EOS	O O O B-depart_date.day_name B-depart_time.time B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS show types aircraft EOS	O O O O atis_aircraft
+BOS want flight continental boston san francisco EOS	O O O B-airline_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights pittsburgh san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS city mco EOS	O O B-airport_code atis_city
+BOS many cities served american airline first class flights EOS	O O O O B-airline_name I-airline_name B-class_type I-class_type O atis_quantity
+BOS could please show flights charlotte milwaukee EOS	O O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights depart san francisco 4 pm fly washington via indianapolis EOS	O O O B-fromloc.city_name I-fromloc.city_name B-depart_time.time I-depart_time.time O B-toloc.city_name O B-stoploc.city_name atis_flight
+BOS would like see flights denver philadelphia EOS	O O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights go san diego newark new jersey way houston EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name I-toloc.state_name O B-stoploc.city_name atis_flight
+BOS would like information flights denver san francisco noon wednesday EOS	O O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_time.time B-depart_date.day_name atis_flight
+BOS show flights boston pittsburgh EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights san diego new york nonstop EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-flight_stop atis_flight
+BOS show round trip tickets baltimore atlanta EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS show cheapest one way fares san diego miami EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_airfare
+BOS could show weekday flights phoenix denver EOS	O O O B-flight_mod O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like fly boston philadelphia next thursday EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name atis_flight
+BOS planning trip pittsburgh live denver help EOS	O O O B-toloc.city_name O B-fromloc.city_name O atis_flight
+BOS would like find least expensive flight boston denver EOS	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like go atlanta denver tuesday EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS atlanta pittsburgh july twenty third EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_flight
+BOS show flights boston atlanta EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS airlines fly burbank denver EOS	O O O B-fromloc.city_name B-toloc.city_name atis_airline
+BOS okay going washington denver first class ticket like know cost first class ticket EOS	O O O B-fromloc.city_name B-toloc.city_name B-class_type I-class_type O O O O B-class_type I-class_type O atis_airfare
+BOS wish book flight pittsburgh atlanta coach discount fare EOS	O O O O B-fromloc.city_name B-toloc.city_name B-class_type O O atis_flight
+BOS possible fly baltimore san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS want fly denver san francisco least one stop EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-flight_stop I-flight_stop atis_flight
+BOS many us air flights leave washington EOS	O O B-airline_name I-airline_name O O B-fromloc.city_name atis_quantity
+BOS please list flight available leaving oakland california tuesday arriving philadelphia wednesday EOS	O O O O O O B-fromloc.city_name B-fromloc.state_name B-depart_date.day_name O B-toloc.city_name B-arrive_date.day_name atis_flight
+BOS like find flight las vegas detroit michigan leaves afternoon monday EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name O B-depart_time.period_of_day B-depart_date.day_name atis_flight
+BOS flights denver pittsburgh stops atlanta EOS	O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name atis_flight
+BOS like know information boston philadelphia nonstop EOS	O O O O B-fromloc.city_name B-toloc.city_name B-flight_stop atis_flight
+BOS show flights denver philadelphia saturday sunday leave noon EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.day_name O B-depart_time.time atis_flight
+BOS flights dallas baltimore EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flight san francisco atlanta around 8 EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_time.time_relative B-depart_time.time atis_flight
+BOS flights seattle salt lake city EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS cheapest flight boston bwi EOS	O B-cost_relative O B-fromloc.city_name B-toloc.airport_code atis_flight
+BOS flights new york los angeles stop milwaukee EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-stoploc.city_name atis_flight
+BOS earliest flight oakland washington dc sunday EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.day_name atis_flight
+BOS turboprop flights pittsburgh baltimore december seventeenth EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS show morning flights boston philadelphia EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS newark cleveland daily EOS	O B-fromloc.city_name B-toloc.city_name B-flight_days atis_flight
+BOS evening flights philadelphia oakland EOS	O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show prices times first class travel baltimore dallas next summer EOS	O O O B-flight_time B-class_type I-class_type O B-fromloc.city_name B-toloc.city_name O O atis_airfare
+BOS kind plane flies boston pittsburgh noon EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_time.time atis_aircraft
+BOS like know flights united airline dallas san francisco EOS	O O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show morning flights toronto EOS	O O B-depart_time.period_of_day O B-fromloc.city_name atis_flight
+BOS ground transportation available boston airport EOS	O O O O B-airport_name I-airport_name atis_ground_service
+BOS flights boston oakland stop EOS	O O B-fromloc.city_name B-toloc.city_name B-flight_stop atis_airport
+BOS show earliest flight boston san francisco EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights la guardia jfk cleveland EOS	O O B-fromloc.airport_name I-fromloc.airport_name B-fromloc.airport_code B-toloc.city_name atis_flight
+BOS find cheapest one way fare boston san francisco EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS flights washington dc denver EOS	O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS give information flights atlanta washington dc wednesday 4 pm thursday 9 EOS	O O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.day_name B-depart_time.time I-depart_time.time B-depart_date.day_name B-depart_time.time atis_flight
+BOS flights baltimore washington dc EOS	O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS fare codes cover flights philadelphia san francisco EOS	O O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_abbreviation
+BOS flights boston oakland stop EOS	O O B-fromloc.city_name B-toloc.city_name B-flight_stop atis_flight
+BOS list departure times denver philadelphia later 10 o'clock earlier 2 pm EOS	O O B-flight_time I-flight_time B-fromloc.city_name B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time B-depart_time.time_relative B-depart_time.time I-depart_time.time atis_flight_time
+BOS airlines flights boston philadelphia leave 630 EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.time atis_airline
+BOS many first class flights united today EOS	O O B-class_type I-class_type O B-airline_name B-depart_date.today_relative atis_quantity
+BOS please show flights available san francisco pittsburgh tuesday EOS	O O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS miami like travel las vegas sunday EOS	O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS show flights denver philadelphia EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like fly pittsburgh atlanta us air latest time possible evening EOS	O O O O B-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name B-flight_mod I-flight_mod I-flight_mod B-depart_time.period_of_day atis_flight
+BOS show flights dallas pittsburgh leave monday 8 o'clock EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time atis_flight
+BOS nonstop flights leaving denver arriving baltimore july seventh EOS	O B-flight_stop O O B-fromloc.city_name O B-toloc.city_name B-arrive_date.month_name B-arrive_date.day_number atis_flight
+BOS list round trip flights boston oakland using twa EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name O B-airline_code atis_flight
+BOS sunday flights oakland washington dc EOS	O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS flights sunday seattle minneapolis EOS	O O B-depart_date.day_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights las vegas montreal saturday EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS fare continental 271 dallas san francisco EOS	O O B-airline_name B-flight_number B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS show flights denver washington dc thursday EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.day_name atis_flight
+BOS type ground transportation available philadelphia airport EOS	O O O O O B-airport_name I-airport_name atis_ground_service
+BOS flights phoenix milwaukee wednesday evening EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS show last flight love field EOS	O O B-flight_mod O B-fromloc.airport_name I-fromloc.airport_name atis_flight
+BOS list flights depart orlando kansas city EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS want fly kansas city chicago next wednesday arriving evening returning next day EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name O B-arrive_time.period_of_day O B-return_date.date_relative O atis_flight
+BOS ground transportation available city fort worth EOS	O O O O O B-city_name I-city_name atis_ground_service
+BOS need flight baltimore seattle stops minneapolis EOS	O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name atis_flight
+BOS latest flight departing dallas philadelphia EOS	O B-flight_mod O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights atlanta philadelphia EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights arriving love field airports EOS	O O O O B-toloc.airport_name I-toloc.airport_name O atis_flight
+BOS ewr stand EOS	O B-airport_code O atis_abbreviation
+BOS flights denver salt lake city EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS please give flight times morning united airlines september twentieth philadelphia san francisco EOS	O O O B-flight_time I-flight_time B-depart_time.period_of_day B-airline_name I-airline_name B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight_time
+BOS earliest arrival salt lake city flight toronto EOS	O B-flight_mod O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-fromloc.city_name atis_flight
+BOS like see flights boston philadelphia EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS fare code c EOS	O O O B-fare_basis_code atis_abbreviation
+BOS kind aircraft delta fly 8 august second boston denver EOS	O O O B-airline_name O B-depart_time.time B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name B-toloc.city_name atis_aircraft
+BOS flight denver san francisco afternoon EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_time.period_of_day atis_flight
+BOS first flight boston stapleton airport tomorrow EOS	O B-flight_mod O B-fromloc.city_name B-toloc.airport_name I-toloc.airport_name B-depart_date.today_relative atis_flight
+BOS need know flights leave atlanta sunday evening arrive baltimore EOS	O O O O O B-fromloc.city_name B-depart_date.day_name B-depart_time.period_of_day O B-toloc.city_name atis_flight
+BOS flights milwaukee orlando wednesday EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS cheapest fare denver boston EOS	O B-cost_relative O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS airlines business class EOS	O O B-class_type I-class_type atis_airline
+BOS need flight san francisco pittsburgh pittsburgh new york new york san francisco EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights washington dc san francisco leaving washington 6 pm wednesday EOS	O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name I-toloc.city_name O B-fromloc.city_name B-depart_time.time I-depart_time.time B-depart_date.day_name atis_flight
+BOS type aircraft eastern fly atlanta denver 6 pm EOS	O O O B-airline_name O B-fromloc.city_name B-toloc.city_name B-depart_time.time I-depart_time.time atis_aircraft
+BOS would like flights available boston denver arriving denver 9 o'clock wednesday morning 9 o'clock wednesday morning EOS	O O O O O B-fromloc.city_name B-toloc.city_name O B-toloc.city_name B-arrive_time.time I-arrive_time.time B-arrive_date.day_name B-arrive_time.period_of_day B-arrive_time.time I-arrive_time.time B-arrive_date.day_name B-arrive_time.period_of_day atis_flight
+BOS ground transportation available baltimore airport EOS	O O O O B-airport_name I-airport_name atis_ground_service
+BOS show flights atlanta baltimore denver dallas EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.city_name B-toloc.city_name atis_flight
+BOS flights minneapolis chicago EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights denver pittsburgh thursday EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS may list flights going boston denver twenty ninth july EOS	O O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_number I-depart_date.day_number B-depart_date.month_name atis_flight
+BOS flights nashville st. louis nonstop arrive noon 8 pm EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-flight_stop O B-arrive_time.time B-arrive_time.time I-arrive_time.time atis_flight
+BOS please list flight times boston pittsburgh EOS	O O O B-flight_time I-flight_time B-fromloc.city_name B-toloc.city_name atis_flight_time
+BOS flight leaving oakland salt lake city EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS different classes airline offers EOS	O O O O O atis_flight
+BOS could tell ground transportation boston airport boston downtown EOS	O O O O O B-fromloc.airport_name I-fromloc.airport_name B-toloc.city_name O atis_ground_service
+BOS ground transportation denver EOS	O O O B-city_name atis_ground_service
+BOS prices flights atlanta dallas morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day atis_airfare
+BOS long take fly boston atlanta EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_distance
+BOS please list friday afternoon flights san jose dallas american airlines EOS	O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS american airlines flight evening dallas san francisco EOS	O B-airline_name I-airline_name O B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS ground transportation available denver EOS	O O O O B-city_name atis_ground_service
+BOS show fares dallas san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS pittsburgh like rent car EOS	O B-city_name O O B-transport_type atis_ground_service
+BOS would like find flight goes tampa montreal making stop new york flight serves lunch EOS	O O O O O O B-fromloc.city_name B-toloc.city_name O O B-stoploc.city_name I-stoploc.city_name O O B-meal_description atis_flight
+BOS please give flights atlanta boston wednesday afternoon thursday morning EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list flights leaving st. louis arriving milwaukee EOS	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name atis_flight
+BOS flights montreal las vegas EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS give flights chicago seattle saturday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS airline nw EOS	O O B-airline_code atis_airline
+BOS need flight tonight charlotte las vegas stop st. louis want dinner EOS	O O O B-depart_date.today_relative B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-stoploc.city_name I-stoploc.city_name O B-meal_description atis_flight
+BOS latest flight denver arrives pittsburgh next monday EOS	O B-flight_mod O B-fromloc.city_name O B-toloc.city_name B-arrive_date.date_relative B-arrive_date.day_name atis_flight
+BOS please list flights taking landing general mitchell international airport EOS	O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name atis_flight
+BOS limousine service boston EOS	O B-transport_type O B-city_name atis_ground_service
+BOS fare code mean EOS	O O O O atis_abbreviation
+BOS delta flights leaving denver EOS	O B-airline_name O O B-fromloc.city_name atis_flight
+BOS thursday like flight st. petersburg miami EOS	O B-depart_date.day_name O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS planes leave boston EOS	O O O B-fromloc.city_name atis_flight
+BOS flights wednesday morning atlanta philadelphia EOS	O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights san francisco boston philadelphia baltimore EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.city_name B-toloc.city_name atis_flight
+BOS type aircraft used first flight philadelphia dallas morning EOS	O O O O B-flight_mod O B-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day atis_aircraft
+BOS flights pittsburgh oakland EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list morning flights 124 dollars atlanta boston EOS	O O B-depart_time.period_of_day O B-fare_amount I-fare_amount B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights miami new york EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights denver oakland EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights philadelphia san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS like flight tomorrow late nashville houston dinner please EOS	O O O B-depart_date.today_relative B-depart_time.period_mod B-fromloc.city_name B-toloc.city_name B-meal_description O atis_flight
+BOS show prices economy baltimore dallas EOS	O O O B-economy B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS need flight montreal quebec san diego california leaving sunday EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name B-toloc.state_name O B-depart_date.day_name atis_flight
+BOS show cheapest one way flight san francisco boston leaving san francisco 9 pm EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-fromloc.city_name I-fromloc.city_name B-depart_time.time I-depart_time.time atis_flight
+BOS united airlines flights boston denver EOS	O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like fly us air orlando cleveland late evening available EOS	O O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name B-depart_time.period_mod B-depart_time.period_of_day O atis_flight
+BOS flights milwaukee orlando wednesday night EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS show flights newark los angeles EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS give evening flight wednesday washington atlanta EOS	O O B-depart_time.period_of_day O B-depart_date.day_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights prices la charlotte monday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS first class flights available july twenty fifth 1991 denver baltimore EOS	O B-class_type I-class_type O O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_date.year B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights pittsburgh baltimore tomorrow serve meal EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.today_relative O B-meal atis_flight
+BOS show flights philadelphia denver EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights phoenix newark EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights pittsburgh dallas round trip 12 pm less 100 EOS	O O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip B-depart_time.time I-depart_time.time B-cost_relative B-fare_amount atis_flight
+BOS thanks last flight back washington boston EOS	O O B-flight_mod O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights boston baltimore EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS fare code q mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS show flights arriving baltimore philadelphia 4 o'clock EOS	O O O O B-toloc.city_name B-fromloc.city_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS cheapest fare baltimore dallas class EOS	O B-cost_relative O B-fromloc.city_name B-toloc.city_name O atis_airfare
+BOS give nonstops new york vegas arrive sunday EOS	O O B-flight_stop B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-arrive_date.day_name atis_flight
+BOS sa EOS	O B-days_code atis_abbreviation
+BOS show flights boston san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS fare code qo mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS need information flights leaving dallas arriving boston leaving dallas early morning EOS	O O O O O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name B-depart_time.period_mod B-depart_time.period_of_day atis_flight
+BOS earliest flight thursday atlanta washington dc EOS	O B-flight_mod O B-depart_date.day_name B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS flights available saturday san francisco dallas EOS	O O O B-depart_date.day_name B-toloc.city_name I-toloc.city_name B-fromloc.city_name atis_flight
+BOS like fly boston san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS many flights american airlines boston atlanta EOS	O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_quantity
+BOS midwest express flights montreal nashville EOS	O B-airline_name O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show economy prices dallas baltimore EOS	O O B-economy O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS much cost travel boston airport downtown EOS	O O O O B-fromloc.airport_name I-fromloc.airport_name O atis_airfare
+BOS flights 10 boston denver EOS	O O B-depart_time.time B-fromloc.city_name B-fromloc.city_name atis_flight
+BOS show flights go san diego newark one stop houston EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-flight_stop I-flight_stop B-stoploc.city_name atis_flight
+BOS show earliest flight wednesday baltimore newark EOS	O O B-flight_mod O B-depart_date.day_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS like book cheapest one way flight pittsburgh atlanta july twentieth EOS	O O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS mco mean EOS	O B-airport_code O atis_abbreviation
+BOS show flights charlotte cleveland EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flight salt lake city st. petersburg EOS	O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS earliest flight boston atlanta EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS like flight tomorrow kansas city newark morning EOS	O O O B-depart_date.today_relative B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day atis_flight
+BOS show flights boston detroit EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights arriving baltimore june fifteenth leaving either denver dallas EOS	O O O O B-toloc.city_name B-arrive_date.month_name B-arrive_date.day_number O O B-fromloc.city_name B-fromloc.city_name atis_flight
+BOS show flights love field airports EOS	O O O B-fromloc.airport_name I-fromloc.airport_name O atis_flight
+BOS earliest flight get baltimore boston EOS	O B-flight_mod O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS round trip thrift fare us air boston san francisco EOS	O B-round_trip I-round_trip B-class_type O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS show flights los angeles pittsburgh monday evening EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS would like flight atlanta denver EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS give flights memphis charlotte EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS philadelphia toronto EOS	O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS newark cleveland EOS	O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list american airline flights leave phoenix wednesday stop milwaukee EOS	O O B-airline_name I-airline_name O O B-fromloc.city_name B-depart_date.day_name O B-stoploc.city_name atis_flight
+BOS show flights pittsburgh baltimore tomorrow EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.today_relative atis_flight
+BOS direct flight denver pittsburgh morning august thirty first nonstop EOS	O B-connect O B-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-flight_stop atis_flight
+BOS airline offers cheapest rate going dallas baltimore july fourth EOS	O O O B-cost_relative O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_airline
+BOS midwest express serve charlotte EOS	O B-airline_name O O B-city_name atis_flight
+BOS show flights philadelphia san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS ground transportation denver EOS	O O O B-city_name atis_ground_service
+BOS show flights boston dallas fort worth direct connecting arrive noon EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O B-arrive_time.time atis_flight
+BOS show flights philadelphia dallas saturday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS flights leaving atlanta oakland leaving 5 pm EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.time I-depart_time.time atis_flight
+BOS okay may four would like go atlanta denver leaving early morning around 8 EOS	O O B-depart_date.month_name B-depart_date.day_number O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.period_mod B-depart_time.period_of_day B-depart_time.time_relative B-depart_time.time atis_flight
+BOS flights boston washington dc november eleventh EOS	O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS early morning flights boston denver EOS	O B-depart_time.period_of_day B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS cheapest flight denver pittsburgh leaving september twenty eighth EOS	O B-cost_relative O B-fromloc.city_name B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_flight
+BOS flight dallas oakland california monday EOS	O O B-fromloc.city_name B-toloc.city_name B-toloc.state_name B-depart_date.day_name atis_flight
+BOS would like fly dallas san francisco saturday arrive san francisco 4 pm EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-toloc.city_name I-toloc.city_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS morning flights san francisco arriving boston afternoon EOS	O B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-arrive_time.period_of_day atis_flight
+BOS like see flights baltimore atlanta arrive noon EOS	O O O O B-fromloc.city_name B-toloc.city_name O B-arrive_time.time atis_flight
+BOS find earliest boston departure atlanta lastest return trip atlanta atlanta longest amount time return boston day EOS	O O B-flight_mod B-fromloc.city_name O B-toloc.city_name B-flight_mod O O B-fromloc.city_name B-toloc.city_name O O O O B-toloc.city_name B-return_date.date_relative atis_flight
+BOS please give cheapest round trip airfare atlanta philadelphia august first EOS	O O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_airfare
+BOS would like information flights philadelphia oakland california friday afternoon EOS	O O O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS afternoon flights available pittsburgh atlanta weekday EOS	O B-depart_time.period_of_day O O B-fromloc.city_name B-toloc.city_name B-flight_mod atis_flight
+BOS show ground transportation denver EOS	O O O O B-city_name atis_ground_service
+BOS please show airlines flights denver boston stop philadelphia EOS	O O O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name atis_airline
+BOS dallas baltimore EOS	O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS rental cars washington dc EOS	O B-transport_type I-transport_type B-city_name B-state_code atis_ground_service
+BOS american airlines fly san francisco atlanta EOS	O B-airline_name I-airline_name O B-toloc.city_name I-toloc.city_name B-fromloc.city_name atis_flight
+BOS kindly give type aircraft used fly atlanta denver EOS	O O O O O O O B-fromloc.city_name B-toloc.city_name atis_aircraft
+BOS give flights denver baltimore EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS fare class h EOS	O O O B-fare_basis_code atis_abbreviation
+BOS earliest flight washington san francisco friday serves breakfast EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-meal_description atis_flight
+BOS flights atlanta washington early thursday mornings EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS kind ground transportation dallas EOS	O O O O B-city_name atis_ground_service
+BOS could list flights first class monday san francisco pittsburgh starting noon afterwards EOS	O O O O B-class_type I-class_type B-depart_date.day_name B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_time.time B-depart_time.time_relative atis_flight
+BOS much us air boston pittsburgh daily nonstop flight EOS	O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name B-flight_days B-flight_stop O atis_airfare
+BOS like go boston atlanta sometime 5 pm tell flights could EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.time I-depart_time.time O O O atis_flight
+BOS fare code yn EOS	O O O B-fare_basis_code atis_abbreviation
+BOS airports new york EOS	O O B-city_name I-city_name atis_airport
+BOS like arrange two friends fly los angeles next saturday evening one people coming kansas city coming las vegas EOS	O O O O O O B-toloc.city_name I-toloc.city_name B-arrive_date.date_relative B-arrive_date.day_name B-arrive_time.period_of_day O O O B-fromloc.city_name I-fromloc.city_name O B-fromloc.city_name I-fromloc.city_name atis_flight
+BOS show overnight flights washington dc san francisco list fares EOS	O O B-flight_mod O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name I-toloc.city_name O O atis_flight
+BOS ground transportation atlanta EOS	O O O B-city_name atis_ground_service
+BOS flights pittsburgh baltimore arriving 4 5 pm EOS	O O B-fromloc.city_name B-toloc.city_name O B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS fare code qw mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS show flights new york city las vegas EOS	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need information ground transportation denver colorado EOS	O O O O O B-city_name B-state_name atis_ground_service
+BOS list flight philadelphia san francisco american airlines EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS show airlines flights love field EOS	O O O O B-fromloc.airport_name I-fromloc.airport_name atis_airline
+BOS list nonstop flights san francisco oakland depart afternoon EOS	O O B-flight_stop O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-arrive_time.period_of_day atis_flight
+BOS airline serves denver pittsburgh atlanta EOS	O O O B-fromloc.city_name B-fromloc.city_name B-fromloc.city_name atis_airline
+BOS many first class flights delta airlines EOS	O O B-class_type I-class_type O B-airline_name I-airline_name atis_quantity
+BOS please show flights arriving philadelphia denver EOS	O O O O O B-toloc.city_name B-fromloc.city_name atis_flight
+BOS show flights pittsburgh baltimore EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights milwaukee orlando wednesday night thursday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS would like fly delta airlines atlanta pittsburgh EOS	O O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS fare code f EOS	O O O B-fare_basis_code atis_abbreviation
+BOS flights united airlines september twentieth morning EOS	O O B-airline_name I-airline_name B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day atis_flight
+BOS show airlines flights denver dallas EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_airline
+BOS cheapest fare nashville seattle EOS	O B-cost_relative O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS many flights american airlines class service code f EOS	O O O B-airline_name I-airline_name O O O B-fare_basis_code atis_quantity
+BOS find nonstop flight boston washington arriving washington around 5 pm EOS	O O B-flight_stop O B-fromloc.city_name B-toloc.city_name O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS pittsburgh baltimore please january one EOS	O B-fromloc.city_name B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS show costs times flights san francisco atlanta EOS	O O O B-flight_time O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_airfare#atis_flight_time
+BOS airlines fly boston denver EOS	O O O B-fromloc.city_name B-toloc.city_name atis_airline
+BOS ground transportation atlanta EOS	O O O B-city_name atis_ground_service
+BOS far airport dallas fort worth airport dallas EOS	O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name B-fromloc.city_name atis_distance
+BOS list flights tampa florida miami cheapest one way EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name B-cost_relative B-round_trip I-round_trip atis_flight
+BOS show flights philadelphia baltimore EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS ground transportation denver EOS	O O O B-city_name atis_ground_service
+BOS please list flights atlanta baltimore wednesday thursday EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.day_name atis_flight
+BOS flight dl 1083 philadelphia denver fly saturdays EOS	O O B-airline_code B-flight_number B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name atis_flight
+BOS would like book flight going tampa seattle may twenty sixth would like stop milwaukee way EOS	O O O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O O O B-stoploc.city_name O atis_flight
+BOS want fly boston atlanta would like cheapest fare please EOS	O O O B-fromloc.city_name B-toloc.city_name O O B-cost_relative O O atis_flight
+BOS show flights montreal philly EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights available sunday afternoon oakland dallas EOS	O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name atis_flight
+BOS explain restriction ap 80 EOS	O O O B-restriction_code I-restriction_code atis_abbreviation
+BOS want go baltimore san francisco stopover denver EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-stoploc.city_name atis_flight
+BOS information flight san francisco philadelphia EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS shortest morning flights cincinnati tampa EOS	O B-flight_mod B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights boston washington october fifteenth 1991 EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number B-depart_date.year atis_flight
+BOS flights wednesday evening denver sfo EOS	O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.airport_code atis_flight
+BOS show list flights american airlines boston dc july twenty second EOS	O O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.state_code B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_flight
+BOS us air 269 leaving boston 428 arrival time baltimore EOS	O B-airline_name I-airline_name B-flight_number O B-fromloc.city_name B-depart_time.time B-flight_time I-flight_time B-toloc.city_name atis_flight
+BOS would like information flights leaving early monday morning atlanta baltimore EOS	O O O O O O B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights memphis cleveland EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights leave nashville phoenix EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show air fare flights baltimore dallas EOS	O O O O O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS flights denver san francisco EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS airlines go san francisco washington way indianapolis EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-stoploc.city_name atis_airline
+BOS flights washington dc san francisco november twelfth EOS	O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS round trip fares pittsburgh philadelphia 1000 dollars EOS	O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-fare_amount I-fare_amount atis_airfare
+BOS show nonstop flights new york miami tuesday cost less 466 dollars one way EOS	O O B-flight_stop O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-arrive_date.day_name O B-cost_relative B-fare_amount I-fare_amount B-round_trip I-round_trip atis_flight
+BOS like flights american airlines philadelphia dallas arriving 1145 EOS	O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name O B-arrive_time.time atis_flight
+BOS show business class fares san francisco denver united airlines EOS	O O B-class_type I-class_type O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_airfare
+BOS earliest flight logan bwi EOS	O B-flight_mod O B-fromloc.airport_name B-toloc.airport_code atis_flight
+BOS describe pittsburgh airport EOS	O O B-airport_name I-airport_name atis_airport
+BOS show flights us air pittsburgh oakland connecting denver EOS	O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name B-connect B-stoploc.city_name atis_flight
+BOS list nonstop flights tuesday noon charlotte baltimore EOS	O O B-flight_stop O B-arrive_date.day_name B-arrive_time.time B-fromloc.city_name B-toloc.city_name atis_flight
+BOS minneapolis phoenix monday EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS please list flights cost airlines flying denver baltimore EOS	O O O O O O O B-fromloc.city_name B-toloc.city_name atis_flight#atis_airfare
+BOS airline uses code hp EOS	O O O O B-airline_code atis_airline
+BOS find flight san francisco boston wednesday EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS could tell ground transportation arrangements dallas airport downtown dallas EOS	O O O O O O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name atis_ground_service
+BOS display flights pittsburgh san francisco august second EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS give morning flights charlotte baltimore EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS anything baltimore washington stopover denver going san francisco EOS	O O B-fromloc.city_name B-fromloc.city_name O B-stoploc.city_name O B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights boston denver EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights columbus charlotte EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight new york city montreal thursday may six EOS	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS philadelphia san francisco EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS earliest flight boston san francisco EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS limousine service available pittsburgh airport EOS	O B-transport_type O O B-fromloc.airport_name I-fromloc.airport_name atis_ground_service
+BOS boston ground transportation EOS	O B-city_name O O atis_ground_service
+BOS earliest flight boston san francisco please serving meal EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O O B-meal atis_flight
+BOS code qw mean EOS	O O B-fare_basis_code O atis_abbreviation
+BOS airline hp EOS	O O B-airline_code atis_airline
+BOS costs car rental dallas EOS	O O B-transport_type I-transport_type B-city_name atis_ground_fare
+BOS show flights leaving saturday sunday milwaukee phoenix EOS	O O O O B-depart_date.day_name B-depart_date.day_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS interested flight pittsburgh atlanta EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights kansas city cleveland wednesday EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS nonstop flight denver san francisco EOS	O B-flight_stop O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS display flights san francisco boston august eighth EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS airlines flights philadelphia pittsburgh EOS	O O O B-fromloc.city_name B-toloc.city_name atis_airline
+BOS want go boston atlanta monday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS next flight pittsburgh san francisco delta flight 1059 EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-airline_name O B-flight_number atis_flight
+BOS show least expensive flight miami cleveland sunday noon EOS	O O B-cost_relative I-cost_relative O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.time atis_flight
+BOS type aircraft used flying atlanta denver 12 noon EOS	O O O O O B-fromloc.city_name B-toloc.city_name B-depart_time.time I-depart_time.time atis_aircraft
+BOS show flights boston atlanta leave atlanta noon tomorrow EOS	O O O B-fromloc.city_name B-toloc.city_name O B-fromloc.city_name B-depart_time.time B-depart_date.today_relative atis_flight
+BOS much cost rent car tacoma EOS	O O O O B-transport_type B-city_name atis_ground_fare
+BOS kind airplane flight ua 270 denver philadelphia EOS	O O O O B-airline_code B-flight_number B-fromloc.city_name B-toloc.city_name atis_aircraft
+BOS list flights boston atlanta 5 o'clock thursday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_time.time I-depart_time.time B-depart_date.day_name atis_flight
+BOS like earliest flight dallas boston EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights delta atlanta morning EOS	O O O B-airline_name B-fromloc.city_name B-depart_time.period_of_day atis_flight
+BOS flights salt lake city las vegas EOS	O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show list flights philadelphia denver leave afternoon EOS	O O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.period_of_day atis_flight
+BOS fare atlanta boston coach one way EOS	O O B-fromloc.city_name B-toloc.city_name B-class_type B-round_trip I-round_trip atis_airfare
+BOS many fares one way tacoma montreal EOS	O O O B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name atis_quantity
+BOS would like know information flights leaving philadelphia arriving pittsburgh afternoon EOS	O O O O O O O B-fromloc.city_name O B-toloc.city_name B-arrive_time.period_of_day atis_flight
+BOS flights available pittsburgh boston wednesday next week EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.date_relative O atis_flight
+BOS flight continental airlines boston denver EOS	O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS pm flights dallas atlanta EOS	O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS information flights baltimore philadelphia EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights atlanta st. louis tuesday arriving around 230 pm EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS show ground transportation san francisco EOS	O O O O B-city_name I-city_name atis_ground_service
+BOS flights newark new jersey ontario california connect phoenix EOS	O O B-fromloc.city_name B-fromloc.state_name I-fromloc.state_name B-toloc.city_name B-toloc.state_name B-connect B-stoploc.city_name atis_flight

@@ -1,0 +1,893 @@
+BOS would like find flight charlotte las vegas makes stop st. louis EOS	O O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O O B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS april first need ticket tacoma san jose departing 7 EOS	O B-depart_date.month_name B-depart_date.day_number O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-depart_time.time atis_airfare
+BOS april first need flight going phoenix san diego EOS	O B-depart_date.month_name B-depart_date.day_number O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flight traveling one way phoenix san diego april first EOS	O O O O O B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS would like flight orlando salt lake city april first delta airlines EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number B-airline_name I-airline_name atis_flight
+BOS need flight toronto newark one way leaving wednesday evening thursday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip O B-depart_date.day_name B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS monday morning would like fly columbus indianapolis EOS	O B-depart_date.day_name B-depart_time.period_of_day O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS wednesday april sixth would like fly long beach columbus 3 pm EOS	O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_time.time I-depart_time.time atis_flight
+BOS 12 pm wednesday april sixth would like fly long beach columbus EOS	O B-depart_time.time I-depart_time.time B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights long beach columbus wednesday april sixth EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS find flight memphis tacoma dinner EOS	O O O B-fromloc.city_name B-toloc.city_name B-meal_description atis_flight
+BOS next wednesday flight kansas city chicago arrive chicago around 7 pm return flight thursday EOS	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time O O B-return_date.day_name atis_flight
+BOS show flight prices kansas city chicago next wednesday arriving chicago 7 pm EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name O B-toloc.city_name B-arrive_time.time I-arrive_time.time atis_flight#atis_airfare
+BOS flight american miami chicago arrive chicago 5 pm EOS	O O B-airline_name B-fromloc.city_name B-toloc.city_name O B-toloc.city_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS find flights arriving new york city next saturday EOS	O O O O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-arrive_date.date_relative B-arrive_date.day_name atis_flight
+BOS find nonstop flights salt lake city new york saturday april ninth EOS	O O B-flight_stop O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS show flights burbank milwaukee today EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.today_relative atis_flight
+BOS show flights tomorrow evening milwaukee st. louis EOS	O O O B-depart_date.today_relative B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights saturday evening st. louis burbank EOS	O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights burbank st. louis monday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS show flights burbank milwaukee monday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS show flights tuesday evening milwaukee st. louis EOS	O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights wednesday evening st. louis burbank EOS	O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights travel kansas city los angeles EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights travel las vegas los angeles EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights travel kansas city los angeles april ninth EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS flights travel las vegas los angeles california arrive april ninth 4 5 pm EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-toloc.state_name O B-arrive_date.month_name B-arrive_date.day_number B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS flights us air go orlando cleveland EOS	O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights travel cleveland indianapolis april fifth EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS flights travel indianapolis san diego april fifth EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS flights go cleveland indianapolis april fifth EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS flights travel nashville tacoma EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS tacoma airport offer transportation airport downtown area EOS	O B-airport_name I-airport_name O O O O O atis_ground_service
+BOS flights travel tacoma san jose EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS day week flights nashville tacoma fly EOS	O O O O B-fromloc.city_name B-toloc.city_name O atis_day_name
+BOS flights tacoma san jose EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS days week flights san jose nashville fly EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O atis_day_name
+BOS flights tacoma san jose EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need flight goes boston orlando EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights boston orlando connecting new york EOS	O O B-fromloc.city_name B-toloc.city_name B-connect B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS flights boston orlando connecting columbus EOS	O O B-fromloc.city_name B-toloc.city_name B-connect B-stoploc.city_name atis_flight
+BOS flight serve dinner EOS	O O O B-meal_description atis_flight
+BOS need flight charlotte miami EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need nonstop flight miami toronto EOS	O O B-flight_stop O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need nonstop flight toronto st. louis EOS	O O B-flight_stop O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need flight toronto st. louis EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need flight st. louis charlotte EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight united airlines la guardia san jose EOS	O O O B-airline_name I-airline_name B-fromloc.airport_name I-fromloc.airport_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need flight tampa milwaukee EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight milwaukee seattle EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS meals served american flight 811 tampa milwaukee EOS	O B-meal O B-airline_name O B-flight_number B-fromloc.city_name B-toloc.city_name atis_meal
+BOS meals served american flight 665 673 milwaukee seattle EOS	O B-meal O B-airline_name O B-flight_number I-flight_number B-fromloc.city_name B-toloc.city_name atis_meal
+BOS need flight memphis las vegas EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need flight las vegas ontario EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight ontario memphis EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights go milwaukee tampa stop nashville EOS	O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name atis_flight
+BOS flights leave newark noon next saturday arrive los angeles EOS	O O O B-fromloc.city_name B-depart_time.period_of_day B-depart_date.date_relative B-depart_date.day_name O B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights leave detroit arrive st. petersburg around 9 EOS	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative B-arrive_time.time atis_flight
+BOS flights northwest airline leave detroit arrive st. petersburg EOS	O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights leave chicago next tuesday arrive detroit around 6 pm EOS	O O O B-fromloc.city_name B-depart_date.date_relative B-depart_date.day_name O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS show round trip flights chicago detroit leaving next tuesday returning day EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name O B-return_date.date_relative atis_flight
+BOS round trip flights leave chicago next tuesday around 6 pm arrive detroit EOS	O B-round_trip I-round_trip O O B-fromloc.city_name B-depart_date.date_relative B-depart_date.day_name B-depart_time.time_relative B-depart_time.time I-depart_time.time O B-toloc.city_name atis_flight
+BOS round trip flights leave chicago next tuesday arrive detroit around 6 pm EOS	O B-round_trip I-round_trip O O B-fromloc.city_name B-depart_date.date_relative B-depart_date.day_name O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS flights leave monday montreal arrive chicago morning EOS	O O O B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name B-arrive_time.period_of_day atis_flight
+BOS flights leave chicago april twelfth arrive indianapolis morning EOS	O O O B-fromloc.city_name B-depart_date.month_name B-depart_date.day_number O B-toloc.city_name B-arrive_time.period_of_day atis_flight
+BOS flights leave wednesday april thirteenth indianapolis arrive montreal morning EOS	O O O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name O B-toloc.city_name B-arrive_time.period_of_day atis_flight
+BOS flights leave april twelfth indianapolis arrive montreal around 10 pm EOS	O O O B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS like go long beach st. louis like stop dallas also like lunch flight EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name O O B-stoploc.city_name O O B-meal_description O atis_flight
+BOS next wednesday would like leave kansas city trip chicago arrives chicago around 7 pm EOS	O B-depart_date.date_relative B-depart_date.day_name O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS would like return chicago around 7 pm kansas city EOS	O O O O B-fromloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like leave afternoon american flight cincinnati burbank EOS	O O O O B-depart_time.period_of_day B-airline_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS sunday evening would like leave montreal quebec flight san diego california EOS	O B-depart_date.day_name B-depart_time.period_of_day O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name atis_flight
+BOS flights sunday montreal quebec san diego california EOS	O O B-depart_date.day_name B-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name B-toloc.state_name atis_flight
+BOS tuesday flights san diego california indianapolis indiana would like flight afternoon EOS	O B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name B-fromloc.state_name B-toloc.city_name B-toloc.state_name O O O B-depart_time.period_of_day atis_flight
+BOS thursday morning would like nonstop flight indianapolis toronto EOS	O B-depart_date.day_name B-depart_time.period_of_day O O B-flight_stop O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS friday morning would like fly toronto montreal EOS	O B-depart_date.day_name B-depart_time.period_of_day O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like early morning flight today los angeles charlotte EOS	O O O B-depart_time.period_of_day B-depart_time.period_of_day O B-depart_date.today_relative B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS wednesday night would like flight charlotte newark EOS	O B-depart_date.day_name B-depart_time.period_of_day O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS friday night would like flight newark los angeles EOS	O B-depart_date.day_name B-depart_time.period_of_day O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS find flight tampa montreal way new york EOS	O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS please find flight miami florida las vegas nevada arriving 4 o'clock pm EOS	O O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name B-toloc.state_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time atis_flight
+BOS please find flight las vegas michigan EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.state_name atis_flight
+BOS please find flight detroit michigan st. petersburg arriving 10 pm EOS	O O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name O B-arrive_time.time I-arrive_time.time atis_flight
+BOS please find flight st. petersburg miami thursday EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS please find flight san diego toronto alaska airlines EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS please find flights columbus houston layover nashville tomorrow EOS	O O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name B-depart_date.today_relative atis_flight
+BOS please give flights nashville houston nonstop dinner served EOS	O O O O B-fromloc.city_name B-toloc.city_name B-flight_stop B-meal_description O atis_flight
+BOS please find flights available kansas city newark EOS	O O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS please find flight goes kansas city newark orlando back kansas city EOS	O O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.city_name O B-toloc.city_name I-toloc.city_name atis_flight
+BOS please find flight kansas city newark EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS please find flight newark orlando EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please find flight orlando kansas city EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like fly columbus phoenix cincinnati afternoon EOS	O O O O B-fromloc.city_name B-toloc.city_name B-stoploc.city_name B-depart_time.period_of_day atis_flight
+BOS would like know airports los angeles EOS	O O O O O B-city_name I-city_name atis_airport
+BOS airport burbank flight comes kansas city EOS	O O B-toloc.city_name O O B-fromloc.city_name I-fromloc.city_name atis_flight
+BOS flights arrive burbank kansas city saturdays afternoon EOS	O O O B-toloc.city_name B-fromloc.city_name I-fromloc.city_name B-arrive_date.day_name B-arrive_time.period_of_day atis_flight
+BOS flights arrive burbank las vegas saturday april twenty third afternoon EOS	O O O B-toloc.city_name B-fromloc.city_name I-fromloc.city_name B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day atis_flight
+BOS flights available orlando cleveland arrive around 10 pm EOS	O O O B-fromloc.city_name B-toloc.city_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS flights available indianapolis san diego april twenty first late afternoon EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day I-depart_time.period_of_day atis_flight
+BOS flights leave cleveland going indianapolis april twenty first morning EOS	O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day atis_flight
+BOS flights available april twenty first morning nashville tacoma EOS	O O O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights available tacoma san jose morning april twenty second EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_time.period_of_day B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_flight
+BOS flights available san jose nashville leaving morning april twenty three EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_time.period_of_day B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_flight
+BOS expensive one way fare detroit westchester county EOS	O I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS airlines fly detroit westchester county EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airline
+BOS departure times detroit westchester county EOS	O B-flight_time I-flight_time B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight_time
+BOS latest flight baltimore oakland serves dinner EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name O B-meal_description atis_flight
+BOS earliest flight baltimore oakland serves breakfast EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name O B-meal_description atis_flight
+BOS cities boston america west fly first class EOS	O O B-fromloc.city_name B-airline_name I-airline_name O B-class_type I-class_type atis_city
+BOS airline flies boston san diego EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airline
+BOS latest breakfast flight dallas tampa EOS	O B-flight_mod B-meal_description O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show lufthansa flights seattle boston stopovers minneapolis EOS	O O B-airline_name O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name atis_flight
+BOS show flights seattle boston stopovers minneapolis EOS	O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name atis_flight
+BOS list philadelphia san francisco flights stopovers dallas EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O O B-stoploc.city_name atis_flight
+BOS show connecting flights boston denver types aircraft used EOS	O O B-connect O B-fromloc.city_name B-toloc.city_name O O O atis_flight
+BOS show morning flights philadelphia fort worth EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights kansas city st. paul EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show northwest flight 608 kansas city st. paul EOS	O O B-airline_name O B-flight_number B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights indianapolis charlotte monday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS ground transportation charlotte airport charlotte airport downtown charlotte EOS	O O O B-airport_name I-airport_name B-city_name I-city_name O B-city_name atis_ground_service
+BOS show flights charlotte minneapolis leave 2 pm later monday EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.time I-depart_time.time B-depart_time.time_relative B-depart_date.day_name atis_flight
+BOS show flights charlotte minneapolis tuesday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS show direct flights charlotte minneapolis tuesday morning EOS	O O B-connect O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS show flight us 1500 monday charlotte minneapolis please EOS	O O O B-airline_code B-flight_number B-depart_date.day_name B-fromloc.city_name B-toloc.city_name O atis_flight
+BOS show flights minneapolis indianapolis tuesday leave 2 pm EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name O B-depart_time.time I-depart_time.time atis_flight
+BOS show flights minneapolis indiana EOS	O O O B-fromloc.city_name B-toloc.state_name atis_flight
+BOS show flights minneapolis indianapolis tuesday afternoon EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS show flight us 1207 indianapolis charlotte monday flight us 1500 charlotte minneapolis monday flight twa 639 minneapolis indianapolis EOS	O O O B-airline_code B-flight_number B-fromloc.city_name B-toloc.city_name B-depart_date.day_name O O B-flight_number B-fromloc.city_name B-toloc.city_name B-depart_date.day_name O B-airline_code B-flight_number B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights las vegas new york city EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS different airlines go las vegas new york city EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_airline
+BOS show flights america west twa las vegas jfk friday EOS	O O O B-airline_name I-airline_name B-airline_code B-fromloc.city_name I-fromloc.city_name B-toloc.airport_code B-depart_date.day_name atis_flight
+BOS flights tacoma miami leave 6 pm tomorrow EOS	O O B-fromloc.city_name B-toloc.city_name O B-depart_time.time I-depart_time.time B-depart_date.today_relative atis_flight
+BOS like fly san diego houston june tenth EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS american airlines flight houston newark june tenth 6 pm EOS	O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time atis_flight
+BOS american airlines flight houston newark june tenth 3 pm EOS	O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time atis_flight
+BOS need get cincinnati denver june sixth 6 pm EOS	O O O B-fromloc.city_name B-toloc.city_name B-arrive_date.month_name B-arrive_date.day_number B-arrive_time.time I-arrive_time.time atis_flight
+BOS ground transportation denver EOS	O O O B-city_name atis_ground_service
+BOS fare taxi denver EOS	O O B-transport_type B-city_name atis_ground_fare
+BOS fares ground transportation denver EOS	O O O O B-city_name atis_ground_fare
+BOS need fly denver westchester county june seventh 3 pm EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time atis_flight
+BOS ground transportation westchester county EOS	O O O B-city_name I-city_name atis_ground_service
+BOS need take united airlines flight june eighth westchester county cincinnati 3 pm EOS	O O O B-airline_name I-airline_name O B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_time.time I-depart_time.time atis_flight
+BOS united airlines flights june eighth go westchester county cincinnati EOS	O B-airline_name I-airline_name O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS june eighth flights go westchester county cincinnati EOS	O B-depart_date.month_name B-depart_date.day_number O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS us air fly cincinnati denver june sixth EOS	O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS list flights cincinnati denver june sixth EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS list flights denver westchester county june seventh EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS list flights westchester county cincinnati june eighth EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS list flights cincinnati westchester county june sixth EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS list flights westchester county denver june seventh EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS list flights denver cincinnati june eighth EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS list flights denver cincinnati june sixth 4 pm EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time atis_flight
+BOS list flights cincinnati westchester county june seventh EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS list flights westchester county cincinnati june seventh leaving 5 pm EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number O B-depart_time.time I-depart_time.time atis_flight
+BOS airlines love field 6 10 june sixth EOS	O O B-fromloc.airport_name I-fromloc.airport_name B-depart_time.start_time B-depart_time.end_time B-depart_date.month_name B-depart_date.day_number atis_airline
+BOS flights arrive love field june sixth EOS	O O O B-toloc.airport_name I-toloc.airport_name B-arrive_date.month_name B-arrive_date.day_number atis_flight
+BOS list flights montreal philly 9 EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_time.time atis_flight
+BOS list flights cleveland memphis EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights memphis cleveland EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights denver baltimore arriving july first EOS	O O O B-fromloc.city_name B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number atis_flight
+BOS list flights dallas baltimore arriving july first EOS	O O O B-fromloc.city_name B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number atis_flight
+BOS list flights pittsburgh baltimore arriving july first EOS	O O O B-fromloc.city_name B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number atis_flight
+BOS list flights canadian airlines international EOS	O O O B-airline_name I-airline_name I-airline_name atis_flight
+BOS many canadian airlines international flights use j31 EOS	O O B-airline_name I-airline_name I-airline_name O O B-aircraft_code atis_quantity
+BOS many canadian airlines international flights use aircraft 320 EOS	O O B-airline_name I-airline_name I-airline_name O O O B-aircraft_code atis_quantity
+BOS many canadian airlines flights use aircraft dh8 EOS	O O B-airline_name I-airline_name O O O B-aircraft_code atis_quantity
+BOS show flights american airlines fly st. petersburg ontario canada stopover st. louis EOS	O O O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.country_name O B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS show flights american airlines go st. petersburg ontario california way st. louis EOS	O O O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name O B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS airport closest ontario california EOS	O O B-mod B-city_name B-state_name atis_airport
+BOS show flights houston orlando EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights orlando houston EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights detroit las vegas EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show cheapest round trip coach fare las vegas detroit EOS	O O B-cost_relative B-round_trip I-round_trip B-class_type O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_airfare
+BOS show cheapest round trip coach fare twa las vegas detroit EOS	O O B-cost_relative B-round_trip I-round_trip B-class_type O B-airline_code B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_airfare
+BOS show delta flights serve snack coach passengers EOS	O O B-airline_name O O B-meal_description B-compartment O atis_flight
+BOS meal code sb EOS	O O O B-meal_code atis_abbreviation
+BOS meals available dl 468 al arrives san francisco 950 EOS	O B-meal O B-airline_code B-flight_number O O B-toloc.city_name I-toloc.city_name B-arrive_time.time atis_meal
+BOS show delta flights tampa san francisco EOS	O O B-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show delta flight 486 EOS	O O B-airline_name O B-flight_number atis_flight
+BOS list tower air flights mondays EOS	O O B-airline_name I-airline_name O B-day_name atis_flight
+BOS list tower air flights meals EOS	O O B-airline_name I-airline_name O B-meal atis_flight
+BOS flights depart baltimore EOS	O O O B-fromloc.city_name atis_flight
+BOS flights depart baltimore arrive san francisco friday EOS	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-arrive_date.day_name atis_flight
+BOS flights leave cincinnati morning arrive tampa EOS	O O O B-fromloc.city_name B-depart_time.period_of_day O B-toloc.city_name atis_flight
+BOS flights depart tampa arrive cincinnati evening EOS	O O O B-fromloc.city_name O B-toloc.city_name B-arrive_time.period_of_day atis_flight
+BOS flights depart tampa early evening arrive cincinnati EOS	O O O B-fromloc.city_name B-depart_time.period_of_day B-depart_time.period_of_day O B-toloc.city_name atis_flight
+BOS flights depart philadelphia arrive atlanta EOS	O O O B-fromloc.city_name O B-toloc.city_name atis_flight
+BOS flights depart atlanta arrive toronto EOS	O O O B-fromloc.city_name O B-toloc.city_name atis_flight
+BOS flights depart toronto arrive washington dc EOS	O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code atis_flight
+BOS flights depart new york arrive los angeles 10 EOS	O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-arrive_time.time atis_flight
+BOS far new york la guardia downtown EOS	O O B-city_name I-city_name B-airport_name I-airport_name O atis_distance
+BOS far toronto international downtown EOS	O O B-airport_name I-airport_name O atis_distance
+BOS far los angeles international downtown EOS	O O B-airport_name I-airport_name I-airport_name O atis_distance
+BOS far san francisco international downtown EOS	O O B-airport_name I-airport_name I-airport_name O atis_distance
+BOS much limousine service boston EOS	O O B-transport_type O B-city_name atis_ground_fare
+BOS much limousine service la guardia EOS	O O B-transport_type O B-airport_name I-airport_name atis_ground_fare
+BOS much limousine service toronto international EOS	O O B-transport_type O B-airport_name I-airport_name atis_ground_fare
+BOS much limousine service los angeles EOS	O O B-transport_type O B-city_name I-city_name atis_ground_fare
+BOS airlines fly washington dc columbus ohio EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name B-toloc.state_name atis_airline
+BOS flights washington dc columbus ohio EOS	O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name B-toloc.state_name atis_flight
+BOS flights washington dc columbus ohio EOS	O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name B-toloc.state_name atis_flight
+BOS fares flights washington columbus EOS	O O O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS charlotte airport many different types aircraft us air EOS	O B-city_name I-city_name O O O O B-airline_name I-airline_name atis_aircraft
+BOS list us air flights arriving charlotte saturday 1 pm EOS	O O B-airline_name I-airline_name O O B-toloc.city_name B-arrive_date.day_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS first class round trip airfare india indianapolis memphis EOS	O B-class_type I-class_type B-round_trip I-round_trip O O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS list flights memphis miami EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights fares indianapolis memphis monday morning EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight#atis_airfare
+BOS list flights fares memphis miami wednesday evening EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight#atis_airfare
+BOS list flights fares flights miami indianapolis EOS	O O O O O B-fromloc.city_name B-toloc.city_name atis_flight#atis_airfare
+BOS list flights cleveland kansas city monday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights kansas city cleveland EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights cleveland nashville EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights nashville cleveland sunday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list sunday flights cleveland nashville fares EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name O atis_flight#atis_airfare
+BOS airlines departing baltimore EOS	O O O B-fromloc.city_name atis_airline
+BOS airlines fly baltimore san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airline
+BOS long flight baltimore san francisco take EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O atis_distance
+BOS flights leaving kansas city atlanta early monday morning EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS flights leaving atlanta arriving st. louis close 230 pm tuesday EOS	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time B-arrive_date.day_name atis_flight
+BOS please list flights st. louis st. paul depart 10 thursday morning EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-depart_time.time B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list flights st. paul kansas city friday evening meal included EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-meal O atis_flight
+BOS list early morning flights cincinnati tampa EOS	O O B-depart_time.period_of_day B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list early evening flights tampa cincinnati EOS	O O B-depart_time.period_of_day B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list evening flights tampa cincinnati EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights philadelphia atlanta friday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights atlanta toronto friday afternoon EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list flights toronto washington dc saturday EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.day_name atis_flight
+BOS list flights washington dc philadelphia saturday pm EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list direct flights new york city los angeles 10 EOS	O O B-connect O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_time.time atis_flight
+BOS list airfare american airlines flight 19 jfk lax EOS	O O O B-airline_name I-airline_name O B-flight_number B-fromloc.airport_code B-toloc.airport_code atis_airfare#atis_flight
+BOS fare code EOS	O O O atis_abbreviation
+BOS list distance miles boston airport downtown boston EOS	O O O O B-fromloc.airport_name I-fromloc.airport_name O B-city_name atis_distance
+BOS list distance miles new york la guardia airport downtown new york city EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-city_name I-city_name I-city_name atis_distance
+BOS list distance miles toronto international airport downtown toronto EOS	O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-city_name atis_distance
+BOS list distance miles san francisco international airport san francisco downtown EOS	O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name B-toloc.city_name I-toloc.city_name O atis_distance
+BOS list limousine rates city boston EOS	O O B-transport_type O B-city_name I-city_name atis_ground_fare
+BOS list american airlines flights houston milwaukee departing friday pm EOS	O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list flights houston milwaukee friday pm EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list american airlines flights milwaukee san jose wednesday EOS	O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS list american airlines flights san jose dallas friday afternoon EOS	O O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list flights dallas houston arriving sunday afternoon EOS	O O O B-fromloc.city_name B-toloc.city_name O B-arrive_date.day_name B-arrive_time.period_of_day atis_flight
+BOS list airlines flying seattle salt lake city EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_airline
+BOS seating capacity aircraft l10 EOS	O O O O B-aircraft_code atis_capacity
+BOS seating capacity delta be1 EOS	O O O B-airline_name B-aircraft_code atis_capacity
+BOS list flights seattle salt lake city delta l10 EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-airline_name B-aircraft_code atis_flight
+BOS list flights seattle salt lake city delta be1 EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-airline_name B-aircraft_code atis_flight
+BOS list flights boston pittsburgh daily EOS	O O O B-fromloc.city_name B-toloc.city_name B-flight_days atis_flight
+BOS list flights pittsburgh newark daily EOS	O O O B-fromloc.city_name B-toloc.city_name B-flight_days atis_flight
+BOS list flights newark boston daily EOS	O O O B-fromloc.city_name B-toloc.city_name B-flight_days atis_flight
+BOS list us air flights leaving saturday charlotte airport 1 pm EOS	O O B-airline_name I-airline_name O O B-depart_date.day_name B-fromloc.airport_name I-fromloc.airport_name B-depart_time.time I-depart_time.time atis_flight
+BOS list us air flights leaving saturday charlotte airport around 1 pm EOS	O O B-airline_name I-airline_name O O B-depart_date.day_name B-fromloc.airport_name I-fromloc.airport_name B-depart_time.time_relative B-depart_time.time I-depart_time.time atis_flight
+BOS list first class airfare round trip indianapolis memphis EOS	O O B-class_type I-class_type O B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS fare code f EOS	O O O B-fare_basis_code atis_abbreviation
+BOS list flights memphis miami wednesday evening EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list flights miami indianapolis sunday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights ontario california orlando florida EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name B-toloc.state_name atis_flight
+BOS list flights ontario california salt lake city utah EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.state_name atis_flight
+BOS list flights ontario california salt lake city utah monday EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.state_name B-depart_date.day_name atis_flight
+BOS list flights salt lake city utah phoenix arizona monday EOS	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-fromloc.state_name B-toloc.city_name B-toloc.state_name B-depart_date.day_name atis_flight
+BOS list flights salt lake city phoenix arizona tuesday EOS	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name B-depart_date.day_name atis_flight
+BOS list flights phoenix arizona ontario california wednesday EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name B-toloc.state_name B-depart_date.day_name atis_flight
+BOS airlines fly baltimore san francisco EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airline
+BOS fare first class round trip ticket detroit st. petersburg EOS	O O B-class_type I-class_type B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS airfare round trip first class ticket detroit st. petersburg EOS	O O B-round_trip I-round_trip B-class_type I-class_type O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS kansas city atlanta monday morning flights EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O atis_flight
+BOS monday morning flights atlanta kansas city EOS	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS kansas city atlanta monday morning flights EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O atis_flight
+BOS atlanta st. louis tuesday 230 pm flights EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time O atis_flight
+BOS st. louis st. paul thursday 10 EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.time atis_flight
+BOS st. paul kansas city friday night EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS cleveland kansas city arrive monday 3 pm EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS kansas city cleveland flight arrive wednesday 5 pm EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS cleveland nashville flight friday morning EOS	O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS nashville cleveland sunday 9 EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.time atis_flight
+BOS first class flights pittsburgh newark monday morning EOS	O B-class_type I-class_type O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS flights newark los angeles wednesday morning EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS los angeles minneapolis thursday afternoon EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS minneapolis pittsburgh flight EOS	O B-fromloc.city_name B-toloc.city_name O atis_flight
+BOS minneapolis pittsburgh first class flight EOS	O B-fromloc.city_name B-toloc.city_name B-class_type I-class_type O atis_flight
+BOS would like flights leaving milwaukee orlando EOS	O O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS hp stand EOS	O B-airline_code O atis_abbreviation
+BOS would like flights ontario tacoma EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like flights minneapolis san diego EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flights salt lake city cincinnati EOS	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like see flights cincinnati salt lake city EOS	O O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS like flights new york miami EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like flights miami new york EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flight leaving san francisco san diego EOS	O O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flights san diego las vegas EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flight san diego las vegas EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flights las vegas san francisco EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS fare code bn mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS would like airline flies toronto detroit st. louis EOS	O O O O O B-fromloc.city_name B-toloc.city_name B-toloc.city_name I-toloc.city_name atis_airline
+BOS would like flight toronto detroit EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like flight detroit st. louis EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flight toronto st. louis EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flights san francisco long beach EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flights leaving san francisco san diego EOS	O O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flight san francisco st. petersburg EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show one way flight milwaukee orlando leaving wednesday afternoon 6 pm EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time I-depart_time.time atis_flight
+BOS show one way flights milwaukee orlando wednesday EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS show flights columbus chicago first class leave 10 EOS	O O O B-fromloc.city_name B-toloc.city_name B-class_type I-class_type O B-depart_time.time atis_flight
+BOS show cheapest round trip st. petersburg detroit arrives 7 pm EOS	O O B-cost_relative B-round_trip I-round_trip B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-arrive_time.time I-arrive_time.time atis_flight
+BOS show nonstop flights kansas city phoenix EOS	O O B-flight_stop O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS airline wn EOS	O O B-airline_code atis_airline
+BOS show cheapest first class round trip new york miami EOS	O O B-cost_relative B-class_type I-class_type B-round_trip I-round_trip B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show round trips new york miami EOS	O O B-round_trip I-round_trip B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show cheapest one way flight san francisco houston EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show cheapest one way flight houston boston EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show cheapest round trip fares houston boston EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS show cheapest round trip fares san francisco houston EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_airfare
+BOS show cheapest round trip fare san francisco houston february twenty eighth 1994 EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_date.year atis_airfare
+BOS show cheapest one way fare san francisco houston february twenty eighth 1994 EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number B-depart_date.year atis_airfare
+BOS show ground transportation houston monday afternoon EOS	O O O O B-city_name B-day_name B-period_of_day atis_ground_service
+BOS show one way flights houston boston EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show ground transportation could get boston late night EOS	O O O O O O B-city_name B-period_of_day B-period_of_day atis_ground_service
+BOS show airlines flights toronto detroit detroit st. louis st. louis toronto EOS	O O O O B-fromloc.city_name B-toloc.city_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_airline
+BOS show round trip fares toronto detroit delta northwest us air united airlines EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-airline_name B-airline_name B-airline_name I-airline_name B-airline_name I-airline_name atis_airfare
+BOS show flights detroit st. louis delta northwest us air united airlines EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-airline_name B-airline_name B-airline_name I-airline_name B-airline_name I-airline_name atis_flight
+BOS show flights montreal orlando long beach EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights montreal orlando EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight friday afternoon june new york cleveland EOS	O O O B-depart_date.day_name B-depart_time.period_of_day B-depart_date.month_name B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight new york los angeles saturday evening us air EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-airline_name I-airline_name atis_flight
+BOS like red eye flight new york los angeles saturday evening us air EOS	O O B-flight_mod I-flight_mod O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-airline_name I-airline_name atis_flight
+BOS like flight new york los angeles saturday morning us air EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-airline_name I-airline_name atis_flight
+BOS need flight san francisco milwaukee monday morning EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS ua mean EOS	O B-airline_code O atis_abbreviation
+BOS need flight milwaukee washington dc monday night EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS flights milwaukee washington dc tuesday mornings EOS	O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS meals flight 382 milwaukee washington dc tuesday morning EOS	O B-meal O B-flight_number B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_date.day_name B-depart_time.period_of_day atis_meal
+BOS need rent car washington dc EOS	O O O B-transport_type B-city_name B-state_code atis_ground_service
+BOS get flight tuesday night washington dc oakland EOS	O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS dc oakland wednesday morning EOS	O B-fromloc.state_code B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS much cost fly twa columbus milwaukee EOS	O O O O B-airline_code B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS q mean EOS	O B-fare_basis_code O atis_abbreviation
+BOS much cost fly columbus st. louis round trip twa EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-round_trip I-round_trip B-airline_code atis_airfare
+BOS cheapest flight columbus st. louis round trip twa EOS	O B-cost_relative O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-round_trip I-round_trip B-airline_code atis_flight
+BOS cheapest round trip flight twa columbus st. paul EOS	O B-cost_relative B-round_trip I-round_trip O B-airline_code B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS want fly milwaukee los angeles EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS get shortest flight milwaukee orlando EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS shortest flight milwaukee long beach EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS mean EOS	O O atis_abbreviation
+BOS ap 57 mean EOS	O B-restriction_code I-restriction_code O atis_abbreviation
+BOS shortest flight milwaukee st. petersburg EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS shortest flight milwaukee long beach EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS shortest flight milwaukee san diego EOS	O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS ap 20 mean EOS	O B-restriction_code I-restriction_code O atis_abbreviation
+BOS get flight today san francisco detroit michigan EOS	O O O B-depart_date.today_relative B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name atis_flight
+BOS cheapest flight san francisco detroit today EOS	O B-cost_relative O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.today_relative atis_flight
+BOS want fly san francisco milwaukee milwaukee denver EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS cheapest flight san francisco milwaukee EOS	O B-cost_relative O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need rent car milwaukee EOS	O O O B-transport_type B-city_name atis_ground_service
+BOS cheapest flight tomorrow milwaukee denver EOS	O B-cost_relative O B-depart_date.today_relative B-fromloc.city_name B-toloc.city_name atis_flight
+BOS ground transportation available denver EOS	O O O O B-city_name atis_ground_service
+BOS cheapest flight san francisco denver EOS	O B-cost_relative O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights leave cleveland go dallas EOS	O O O B-fromloc.city_name O B-toloc.city_name atis_flight
+BOS show nonstop flights st. petersburg charlotte EOS	O O B-flight_stop O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS airline us EOS	O O B-airline_code atis_airline
+BOS show flights toronto san diego EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS phl EOS	O B-airport_code atis_abbreviation
+BOS mci EOS	O B-airport_code atis_abbreviation
+BOS show flights oakland salt lake city EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS sa mean EOS	O B-days_code O atis_abbreviation
+BOS earliest daily flight oakland salt lake city EOS	O B-flight_mod B-flight_days O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS airline dl EOS	O O B-airline_code atis_airline
+BOS latest daily flight oakland salt lake city EOS	O B-flight_mod B-flight_days O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights los angeles dallas EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS ground transportation available dallas fort worth airport downtown dallas EOS	O O O O B-airport_name I-airport_name I-airport_name I-airport_name O B-city_name atis_ground_service
+BOS many passengers l1011 aircraft hold EOS	O O O B-aircraft_code O O atis_capacity
+BOS seating capacity dc9 EOS	O O O B-aircraft_code atis_capacity
+BOS flights dallas phoenix EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS ground transportation available phoenix airport downtown phoenix EOS	O O O O B-airport_name I-airport_name O B-city_name atis_ground_service
+BOS seating capacity aircraft m80 EOS	O O O O B-aircraft_code atis_capacity
+BOS flights dallas phoenix using dc10 aircraft EOS	O O B-fromloc.city_name B-toloc.city_name O B-aircraft_code O atis_flight
+BOS airline aa EOS	O O B-airline_code atis_airline
+BOS show flights milwaukee indiana EOS	O O O B-fromloc.city_name B-toloc.state_name atis_flight
+BOS flights milwaukee pittsburgh EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS ground transportation available pittsburgh airport downtown pittsburgh EOS	O O O O B-airport_name I-airport_name O B-city_name atis_ground_service
+BOS show flights pittsburgh washington dc EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS ground transportation available dca downtown washington EOS	O O O O B-airport_code O B-city_name atis_ground_service
+BOS flights dca milwaukee EOS	O O B-airport_code B-city_name atis_flight
+BOS ground transportation available milwaukee airport downtown milwaukee EOS	O O O O B-airport_name I-airport_name O B-city_name atis_ground_service
+BOS determine type aircraft used flight cleveland dallas leaves noon EOS	O O O O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.period_of_day atis_aircraft
+BOS find flight st. petersburg charlotte flight leave afternoon arrive soon 5 pm possible nonstop flight EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O O B-depart_time.period_of_day O O B-arrive_time.time I-arrive_time.time O B-flight_stop O atis_flight
+BOS list flight delta airlines toronto san diego EOS	O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flight american airlines toronto san diego EOS	O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flight toronto san diego EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights oakland salt lake city leaving 1700 wednesday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_time.time B-depart_date.day_name atis_flight
+BOS list flights oakland salt lake city leaving midnight thursday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_time.period_of_day B-depart_date.day_name atis_flight
+BOS list flights phoenix las vegas EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights las vegas denver EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights milwaukee washington dc 1200 EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code B-depart_time.time atis_flight
+BOS list flights washington dc pittsburgh leaving 1800 EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name O B-depart_time.time atis_flight
+BOS list flights washington dc pittsburgh EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS list flights pittsburgh milwaukee EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS like flight san diego washington dc EOS	O O O B-toloc.city_name I-toloc.city_name B-fromloc.city_name B-fromloc.state_code atis_flight
+BOS like fly cleveland dallas EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS want fly washington dc phoenix arizona EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name B-toloc.state_name atis_flight
+BOS need flight phoenix atlanta EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like fly atlanta san diego EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like fly san diego seattle EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like fly orlando kansas city EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need flight kansas city minneapolis EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight san diego washington dc EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS need flight washington dc san diego EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name I-toloc.city_name atis_flight
+BOS need round trip flight san diego washington dc fares EOS	O O B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_code O atis_flight#atis_airfare
+BOS need round trip atlanta washington dc fares leaving morning EOS	O O B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name B-toloc.state_code O O B-depart_time.period_of_day atis_flight#atis_airfare
+BOS need round trip phoenix washington dc fare leaving morning EOS	O O B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name B-toloc.state_code O O B-depart_time.period_of_day atis_flight#atis_airfare
+BOS lowest fare flight washington dc boston EOS	O B-cost_relative O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_airfare
+BOS lowest fare washington dc montreal EOS	O B-cost_relative O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_airfare
+BOS lowest fare toronto washington dc EOS	O B-cost_relative O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_airfare
+BOS want flight montreal washington dc EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS want flight nashville seattle arrives later 3 pm EOS	O O O B-fromloc.city_name B-toloc.city_name O I-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS want flight memphis seattle arrives later 3 pm EOS	O O O B-fromloc.city_name B-toloc.city_name O I-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS need flight indianapolis seattle arriving seattle 1205 pm EOS	O O O B-fromloc.city_name B-toloc.city_name O B-toloc.city_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS want flight round trip memphis seattle EOS	O O O B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name atis_flight
+BOS want fly nashville seattle want cheapest fare round trip EOS	O O O B-fromloc.city_name B-toloc.city_name O B-cost_relative O B-round_trip I-round_trip atis_flight
+BOS want fly memphis seattle round trip cheapest fare EOS	O O O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip B-cost_relative O atis_flight
+BOS want fly indianapolis seattle round trip cheapest fare EOS	O O O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip B-cost_relative O atis_flight
+BOS please list flights orlando philadelphia EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please list flights san francisco charlotte EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS please list flights milwaukee philadelphia EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please list flights philadelphia san francisco EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS please show ground transportation milwaukee EOS	O O O O O B-city_name atis_ground_service
+BOS please list flights san francisco milwaukee EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights houston denver EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights houston phoenix EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights phoenix houston EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights newark houston EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights denver houston EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights st. petersburg charlotte EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights orlando kansas city EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights kansas city minneapolis EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights kansas city orlando EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights minneapolis kansas city EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show flights kansas city orlando EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights washington dc boston EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS list fares washington dc montreal EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_airfare
+BOS list flights washington dc montreal EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS list fares washington dc toronto good EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name O atis_airfare
+BOS list fares washington dc boston EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_airfare
+BOS list flights washington dc montreal EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS list flights washington dc toronto EOS	O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS list flights toronto washington dc EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS list flights oakland salt lake city EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS flights go dallas phoenix EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights go phoenix salt lake city EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS need early flight milwaukee denver EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS types ground transportation available denver EOS	O O O O O B-city_name atis_ground_service
+BOS flights go denver st. louis tuesday morning EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS ground transportation available st. louis EOS	O O O O B-city_name I-city_name atis_ground_service
+BOS need fly st. louis milwaukee wednesday afternoon EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS flights washington seattle EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights atlanta seattle EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights san diego seattle EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like flight information phoenix denver EOS	O O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS could flight information flights salt lake city phoenix please EOS	O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name O atis_flight
+BOS could flight information flights pittsburgh phoenix please EOS	O O O O O B-fromloc.city_name B-toloc.city_name O atis_flight
+BOS would like information flights leaving washington dc denver EOS	O O O O O O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name atis_flight
+BOS need information flights washington boston leave saturday EOS	O O O O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name atis_flight
+BOS need flights washington montreal saturday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS need fares flights washington toronto saturday EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_airfare
+BOS want go boston washington saturday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS need flight cleveland dallas leaves noon see much information EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.time O O O atis_flight
+BOS get fares washington boston EOS	O O O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS get saturday fares washington boston EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS get fares washington montreal EOS	O O O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS get saturday fares washington montreal EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS get saturday fares washington toronto EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS get saturday fare washington toronto EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS list saturday flights washington boston EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list saturday flights boston washington EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS get flights milwaukee dtw EOS	O O O B-fromloc.city_name B-toloc.airport_code atis_flight
+BOS list flights milwaukee detroit EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS get flights detroit toronto EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS get flights toronto milwaukee EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS get last flight oakland salt lake city wednesday first flight oakland salt lake city thursday EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS get first flight oakland salt lake city thursday EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS get last flight oakland salt lake city wednesday EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS list last wednesday flight oakland salt lake city EOS	O O B-flight_mod B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS get flight toronto san diego stopping dtw EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-stoploc.airport_code atis_flight
+BOS get flights st. petersburg charlotte EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight milwaukee indianapolis leaving monday 9 EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.time atis_flight
+BOS need flight departing milwaukee indianapolis leaving monday 8 EOS	O O O O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.time atis_flight
+BOS ground transportation available indianapolis airport EOS	O O O O B-airport_name I-airport_name atis_ground_service
+BOS need flight information flight departing indianapolis cleveland departing tuesday noon EOS	O O O O O O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS need flight information flight departing cleveland milwaukee wednesday 6 pm EOS	O O O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time atis_flight
+BOS need flight information flights departing cleveland going back milwaukee wednesday 5 pm EOS	O O O O O O B-fromloc.city_name O O B-toloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time atis_flight
+BOS need flight information flights departing cleveland milwaukee wednesday 5 pm EOS	O O O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time atis_flight
+BOS need flight information flights departing cleveland milwaukee wednesday 5 pm EOS	O O O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time atis_flight
+BOS need flight denver salt lake city monday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS ground transportation available denver airport EOS	O O O O B-airport_name I-airport_name atis_ground_service
+BOS need flight airline information flight denver salt lake city monday departing 5 pm EOS	O O O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-depart_time.time I-depart_time.time atis_flight#atis_airline
+BOS ground transportation available salt lake city airport EOS	O O O O B-airport_name I-airport_name I-airport_name I-airport_name atis_ground_service
+BOS need flight salt lake city phoenix departing wednesday 5 pm EOS	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time atis_flight
+BOS ground transportation available phoenix airport EOS	O O O O B-airport_name I-airport_name atis_ground_service
+BOS need flight oakland salt lake city wednesday departing 6 pm EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-depart_time.time I-depart_time.time atis_flight
+BOS need flight fare information thursday departing prior 9 oakland going salt lake city EOS	O O O O O B-depart_date.day_name O B-depart_time.time_relative B-depart_time.time B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight#atis_airfare
+BOS need flight fare information departing oakland salt lake city thursday 8 EOS	O O O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.time atis_flight#atis_airfare
+BOS need flight numbers airlines flights departing oakland salt lake city thursday departing 8 EOS	O O O O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-depart_time.time atis_flight_no#atis_airline
+BOS need flight numbers flights departing thursday 8 oakland going salt lake city EOS	O O O O O O B-depart_date.day_name B-depart_time.time B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight_no
+BOS list airports arizona nevada california please EOS	O O O B-state_name I-state_name B-state_name O atis_airport
+BOS list california nevada arizona airports EOS	O O B-state_name B-state_name B-state_name O atis_airport
+BOS list arizona airport EOS	O O B-state_name O atis_airport
+BOS list california airports EOS	O O B-state_name O atis_airport
+BOS list flights las vegas phoenix EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS list california airports EOS	O O B-state_name O atis_airport
+BOS list airports EOS	O O O atis_airport
+BOS list wednesday night flights oakland salt lake city EOS	O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights oakland salt lake city 6 thursday morning EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_time.time B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS airlines fly toronto san diego EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airline
+BOS please list afternoon flights st. petersburg charlotte EOS	O O O B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS tpa EOS	O B-airport_code atis_abbreviation
+BOS flights cleveland dallas EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please list flights cleveland dallas leave noon EOS	O O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.period_of_day atis_flight
+BOS type aircraft flying cleveland dallas noon EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day atis_aircraft
+BOS need information flights indianapolis seattle EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight memphis seattle EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need ticket nashville seattle EOS	O O O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS need ticket nashville tennessee seattle EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name atis_airfare
+BOS need flight information milwaukee tampa EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need rent car tampa EOS	O O O B-transport_type B-city_name atis_ground_service
+BOS need daily flight st. louis milwaukee EOS	O O B-flight_days O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flights departing oakland arriving salt lake city EOS	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS need information flights toronto san diego EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need information flights toronto san diego EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS want flight toronto san diego EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS need information flights st. petersburg charlotte EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight numbers flights leaving cleveland arriving dallas EOS	O O O O O O B-fromloc.city_name O B-toloc.city_name atis_flight_no
+BOS flights go new york miami back EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O atis_flight
+BOS fare code qo mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS show flights milwaukee orlando one way EOS	O O O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip atis_flight
+BOS abbreviation us stand EOS	O O B-airline_code O atis_abbreviation
+BOS like one way ticket milwaukee orlando either wednesday evening thursday morning EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day atis_airfare
+BOS show flights milwaukee orlando EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS fare code f mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS fare code h mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS fare code mean EOS	O O O O atis_abbreviation
+BOS restrictions ap 57 EOS	O O B-restriction_code I-restriction_code atis_abbreviation
+BOS please show first class flights indianapolis memphis one way leaving 10 EOS	O O O B-class_type I-class_type O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip O B-depart_time.time atis_flight
+BOS show round trip flights burbank seattle arrive 7 pm seattle EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name O B-arrive_time.time I-arrive_time.time B-toloc.city_name atis_flight
+BOS round trip flights orlando montreal please EOS	O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name O atis_flight
+BOS airline dl EOS	O O B-airline_code atis_airline
+BOS show delta airlines flights montreal orlando EOS	O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights orlando montreal please EOS	O O O B-fromloc.city_name B-toloc.city_name O atis_flight
+BOS airline kw EOS	O O B-airline_code atis_airline
+BOS please list flights new york miami type class EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O O atis_flight
+BOS fare code bh mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS show return flight miami jfk please EOS	O O B-round_trip O B-fromloc.city_name B-toloc.airport_code O atis_flight
+BOS fare code bh mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS fare code bh mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS fare code bh mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS fare code bh mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS show one way flights milwaukee orlando 6 pm wednesday EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_time.time I-depart_time.time B-depart_date.day_name atis_flight
+BOS show flights indianapolis memphis EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show round trip flights burbank seattle EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show round trip flights orlando montreal EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show nonstop flights montreal orlando EOS	O O B-flight_stop O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show round trips montreal orlando EOS	O O B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show round trip flights montreal orlando EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show cheapest one way flights montreal orlando EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show cheapest one way flights orlando montreal EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show cheapest economy flights miami new york EOS	O O B-cost_relative B-economy O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS kansas city las vegas economy EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-economy atis_flight
+BOS kansas city las vegas economy EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-economy atis_flight
+BOS airline hp EOS	O O B-airline_code atis_airline
+BOS ground transportation las vegas EOS	O O O B-city_name I-city_name atis_ground_service
+BOS ground transportation las vegas EOS	O O O B-city_name I-city_name atis_ground_service
+BOS las vegas baltimore economy EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-economy atis_flight
+BOS las vegas baltimore economy EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-economy atis_flight
+BOS baltimore kansas city economy EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-economy atis_flight
+BOS airline us EOS	O O B-airline_code atis_airline
+BOS airline us EOS	O O B-airline_code atis_airline
+BOS airline us EOS	O O B-airline_code atis_airline
+BOS airline us EOS	O O B-airline_code atis_airline
+BOS airline us EOS	O O B-airline_code atis_airline
+BOS columbus chicago one way 10 EOS	O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip B-depart_time.time atis_flight
+BOS airline hp EOS	O O B-airline_code atis_airline
+BOS st. petersburg detroit EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS milwaukee orlando one way 5 pm wednesday EOS	O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip B-depart_time.time I-depart_time.time B-depart_date.day_name atis_flight
+BOS milwaukee atlanta 10 daily EOS	O B-fromloc.city_name B-toloc.city_name B-depart_time.time B-flight_days atis_flight
+BOS airline yx EOS	O O B-airline_code atis_airline
+BOS show flights san jose phoenix EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights san jose phoenix EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS airline hp EOS	O O B-airline_code atis_airline
+BOS show ground transportation phoenix EOS	O O O O B-city_name atis_ground_service
+BOS show flights phoenix fort worth EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show ground transportation fort worth EOS	O O O O B-city_name I-city_name atis_ground_service
+BOS show flights fort worth san jose EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show first class flights new york miami round trip EOS	O O B-class_type I-class_type O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip atis_flight
+BOS show first class flights new york miami round trip EOS	O O B-class_type I-class_type O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip atis_flight
+BOS show round trip flights new york miami nonstop EOS	O O B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-flight_stop atis_flight
+BOS show round trip flights miami new york nonstop EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-flight_stop atis_flight
+BOS show one way flights indianapolis memphis 10 day EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_time.time O atis_flight
+BOS fare code f mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS show round trip flights burbank tacoma EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS restriction ap58 mean EOS	O O B-restriction_code O atis_abbreviation
+BOS fare code h mean EOS	O O O B-fare_basis_code O atis_abbreviation
+BOS airline EOS	O O atis_airline
+BOS airline EOS	O O atis_airline
+BOS airline EOS	O O atis_airline
+BOS airline sam EOS	O O O atis_airline
+BOS show nonstop flights st. petersburg toronto EOS	O O B-flight_stop O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS show nonstop flights toronto st. petersburg EOS	O O B-flight_stop O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show nonstop flights fares toronto st. petersburg EOS	O O B-flight_stop O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight#atis_airfare
+BOS show nonstop flights toronto st. petersburg EOS	O O B-flight_stop O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show weekday flights milwaukee orlando one way EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip atis_flight
+BOS show weekday flights milwaukee orlando one way EOS	O O B-flight_mod O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip atis_flight
+BOS airline hp EOS	O O B-airline_code atis_airline
+BOS list flights chicago san diego EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights chicago san diego EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights kansas city denver EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights denver phoenix EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights phoenix las vegas EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights las vegas san diego EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights chicago kansas city morning EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_time.period_of_day atis_flight
+BOS list flights houston san jose EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS list flights houston milwaukee EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights milwaukee san jose wednesday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights san jose dallas friday EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights dallas houston EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list distance airports downtown new york EOS	O O O O O B-city_name I-city_name atis_distance
+BOS list airports new york EOS	O O O B-city_name I-city_name atis_airport
+BOS list airports new york EOS	O O O B-city_name I-city_name atis_airport
+BOS list airports la EOS	O O O B-city_name atis_airport
+BOS list airports EOS	O O O atis_airport
+BOS list airports la EOS	O O O B-city_name atis_airport
+BOS list airports la EOS	O O O B-city_name atis_airport
+BOS list airports la EOS	O O O B-city_name atis_airport
+BOS list la EOS	O O B-city_name atis_city
+BOS list la EOS	O O B-city_name atis_city
+BOS list flights new york la EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights la guardia burbank EOS	O O O B-fromloc.airport_name I-fromloc.airport_name B-toloc.city_name atis_flight
+BOS list flights la orlando EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights ontario california orlando EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name atis_flight
+BOS list flights ontario california orlando EOS	O O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name atis_flight
+BOS list flights indianapolis memphis fares monday EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_date.day_name atis_flight
+BOS list flights indianapolis memphis monday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights memphis miami wednesday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights miami indianapolis sunday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights charlotte saturday afternoon EOS	O O O B-fromloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list type aircraft flights charlotte EOS	O O O O O B-fromloc.city_name atis_aircraft
+BOS list flights fares tacoma orlando round trip leaving saturday returning next saturday EOS	O O O O B-fromloc.city_name B-toloc.city_name B-round_trip I-round_trip O B-depart_date.day_name O B-return_date.date_relative B-return_date.day_name atis_flight#atis_airfare
+BOS class fare code q EOS	O O O O B-booking_class atis_abbreviation
+BOS list flights orlando tacoma saturday fare basis code q EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name O O O B-fare_basis_code atis_flight
+BOS list airfares first class round trip detroit st. petersburg EOS	O O O B-class_type I-class_type B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS list coach round trip airfare detroit st. petersburg EOS	O O B-class_type B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS list flights pittsburgh newark monday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS list flights minneapolis pittsburgh friday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS list flights 9 cincinnati tampa EOS	O O O B-depart_time.time B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights cincinnati tampa noon EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day atis_flight
+BOS list flights tampa cincinnati 3 pm EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_time.time I-depart_time.time atis_flight
+BOS list airlines fly seattle salt lake city EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_airline
+BOS list delta flights seattle salt lake city EOS	O O B-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS list seating capacities delta flights seattle salt lake city EOS	O O O O B-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_capacity
+BOS list delta flights seattle salt lake city aircraft type EOS	O O B-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name O O atis_flight
+BOS ground transportation baltimore EOS	O O O B-city_name atis_ground_service
+BOS list ground transportation baltimore EOS	O O O O B-city_name atis_ground_service
+BOS list flights baltimore san francisco friday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS give flights los angeles pittsburgh tuesday EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS give flights pittsburgh los angeles thursday evening EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS give round trip flights cleveland miami next wednesday EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name atis_flight
+BOS give fares round trip flights cleveland miami next wednesday EOS	O O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name atis_airfare
+BOS give flights fares trip cleveland miami wednesday EOS	O O O O O B-toloc.city_name B-fromloc.city_name B-depart_date.day_name atis_flight
+BOS give fares miami cleveland next sunday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name atis_airfare
+BOS give flights milwaukee phoenix saturday sunday american airlines EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.day_name B-airline_name I-airline_name atis_flight
+BOS give flights phoenix milwaukee wednesday evening EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS give flights phoenix milwaukee wednesday american airlines EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-airline_name I-airline_name atis_flight
+BOS give flights phoenix milwaukee american airlines EOS	O O O B-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS give flights phoenix milwaukee EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS give meal flights departing early saturday morning chicago seattle nonstop EOS	O O B-meal O O B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name B-flight_stop atis_flight
+BOS give flights chicago seattle saturday morning meals EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-meal atis_flight
+BOS give flights seattle chicago meals continental EOS	O O O B-fromloc.city_name B-toloc.city_name B-meal B-airline_name atis_flight
+BOS give flights seattle chicago meals continental saturday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-meal B-airline_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS give flights chicago seattle continental meals early saturday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-airline_name B-meal B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS give combination continental flights chicago seattle meals early saturday morning EOS	O O O B-airline_name O B-fromloc.city_name B-toloc.city_name B-meal B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS give saturday morning flights meals chicago minneapolis EOS	O O B-depart_date.day_name B-depart_time.period_of_day O B-meal B-fromloc.city_name B-toloc.city_name atis_flight
+BOS give saturday morning flights continental meals chicago minneapolis EOS	O O B-depart_date.day_name B-depart_time.period_of_day O B-airline_name B-meal B-fromloc.city_name B-toloc.city_name atis_flight
+BOS give saturday morning flights chicago st. paul continental meals EOS	O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-airline_name B-meal atis_flight
+BOS give flights new york las vegas nonstop EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-flight_stop atis_flight
+BOS give flights memphis las vegas nonstop EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-flight_stop atis_flight
+BOS give cheapest round trip flights indianapolis orlando around december twenty fifth EOS	O O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_time.time_relative B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_flight
+BOS need friday flight newark tampa EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS need sunday flight tampa charlotte EOS	O O B-depart_date.day_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS give flight charlotte baltimore tuesday morning EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS morning flight baltimore newark please EOS	O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name O atis_flight
+BOS cheapest round trip fare indianapolis orlando december twenty fifth EOS	O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_airfare
+BOS cheapest one way fare indianapolis orlando december twenty seventh EOS	O B-cost_relative B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_airfare
+BOS flight number dallas houston EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight_no
+BOS flight number houston dallas EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight_no
+BOS saturday flight american airlines milwaukee phoenix EOS	O B-depart_date.day_name O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flight numbers american airlines phoenix milwaukee EOS	O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_flight_no
+BOS flight numbers chicago seattle EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight_no
+BOS flight numbers chicago seattle continental EOS	O O O B-fromloc.city_name B-toloc.city_name B-airline_name atis_flight_no
+BOS flight numbers seattle chicago continental EOS	O O O B-fromloc.city_name B-toloc.city_name B-airline_name atis_flight_no
+BOS fare pittsburgh cleveland 200 dollars EOS	O O B-fromloc.city_name B-toloc.city_name B-fare_amount I-fare_amount atis_airfare
+BOS much coach flight pittsburgh atlanta EOS	O O B-class_type O B-fromloc.city_name B-toloc.city_name atis_airfare
+BOS newark tampa friday EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS tampa charlotte sunday morning EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS charlotte baltimore tuesday EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS baltimore newark wednesday morning EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS dallas houston 1201 EOS	O B-fromloc.city_name B-toloc.city_name B-depart_time.time atis_flight
+BOS houston dallas midnight EOS	O B-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day atis_flight
+BOS indianapolis orlando december twenty seventh EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_flight
+BOS cheapest fare indianapolis orlando twenty seventh december EOS	O B-cost_relative O B-fromloc.city_name B-toloc.city_name B-depart_date.day_number I-depart_date.day_number B-depart_date.month_name atis_airfare
+BOS cheapest fare round trip indianapolis orlando december twenty seventh EOS	O B-cost_relative O B-round_trip I-round_trip B-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number atis_airfare
+BOS cleveland miami wednesday arriving 4 pm EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name O B-arrive_time.time I-arrive_time.time atis_flight
+BOS miami cleveland sunday afternoon EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS new york city las vegas memphis las vegas sunday EOS	O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS new york city las vegas memphis las vegas sunday EOS	O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS new york las vegas sunday afternoon EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS memphis las vegas sunday afternoon EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS new york las vegas sunday afternoon EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS chicago seattle saturday morning EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS chicago las vegas saturday morning EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS los angeles pittsburgh afternoon tuesday EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day B-depart_date.day_name atis_flight
+BOS los angeles pittsburgh afternoon monday EOS	O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_time.period_of_day B-depart_date.day_name atis_flight
+BOS pittsburgh los angeles thursday evening EOS	O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS milwaukee phoenix saturday EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS phoenix milwaukee sunday EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS phoenix milwaukee wednesday EOS	O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS flight baltimore san francisco arriving 5 8 pm EOS	O B-flight B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS many northwest flights leave st. paul EOS	O O B-airline_name O O B-fromloc.city_name I-fromloc.city_name atis_flight
+BOS many northwest flights leave washington dc EOS	O O B-airline_name O O B-fromloc.city_name B-fromloc.state_code atis_flight
+BOS many flights northwest leaving dulles EOS	O O O B-airline_name O B-fromloc.airport_name atis_flight
+BOS cities northwest fly EOS	O O B-airline_name O atis_city
+BOS list cities northwest flies EOS	O O O B-airline_name O atis_city
+BOS cities northwest fly EOS	O O B-airline_name O atis_city
+BOS would like connecting flight dallas san francisco leaving 4 o'clock EOS	O O O B-connect O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-depart_time.time I-depart_time.time atis_flight
+BOS please list flights dallas san francisco EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS tell morning flights american airlines philadelphia dallas EOS	O O B-depart_time.period_of_day O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name atis_flight
+BOS tell flights leave philadelphia go dallas EOS	O O O O B-fromloc.city_name O B-toloc.city_name atis_flight
+BOS d9s EOS	O B-aircraft_code atis_abbreviation
+BOS type plane d9s EOS	O O O B-aircraft_code atis_aircraft
+BOS d9s EOS	O B-aircraft_code atis_abbreviation
+BOS show airports serviced tower air EOS	O O O O B-airline_name I-airline_name atis_airport
+BOS show first class coach flights jfk orlando EOS	O O B-class_type I-class_type B-class_type O B-fromloc.airport_code B-toloc.city_name atis_flight
+BOS show first class coach flights kennedy airport miami EOS	O O B-class_type I-class_type B-class_type O B-fromloc.airport_name I-fromloc.airport_name B-toloc.city_name atis_flight
+BOS show first class coach flights jfk miami EOS	O O B-class_type I-class_type B-class_type O B-fromloc.airport_code B-toloc.city_name atis_flight
+BOS meals ever served tower air EOS	O B-meal O O B-airline_name I-airline_name atis_meal
+BOS snacks served tower air EOS	O B-meal_description O B-airline_name I-airline_name atis_meal
+BOS show delta airlines flights jfk miami EOS	O O B-airline_name I-airline_name O B-fromloc.airport_code B-toloc.city_name atis_flight
+BOS show delta airlines boston salt lake EOS	O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show delta airlines flights boston salt lake EOS	O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS show delta airlines flights boston salt lake city EOS	O O B-airline_name I-airline_name O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS fares flights boston washington dc EOS	O O O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_airfare
+BOS least expensive fare boston salt lake city EOS	O B-cost_relative I-cost_relative O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_airfare
+BOS lowest fares washington dc salt lake city EOS	O B-cost_relative O B-fromloc.city_name B-fromloc.state_code B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_airfare
+BOS lowest fare bwi salt lake city EOS	O B-cost_relative O B-fromloc.airport_code B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_airfare
+BOS show cost first class ticket detroit las vegas back EOS	O O O B-class_type I-class_type O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-round_trip atis_airfare
+BOS earliest arriving flight boston washington dc EOS	O B-flight_mod I-flight_mod O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS earliest arriving flight boston washington dc EOS	O B-flight_mod I-flight_mod O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS earliest arriving flight boston washington dc EOS	O B-flight_mod I-flight_mod O B-fromloc.city_name B-toloc.city_name B-toloc.state_code atis_flight
+BOS earliest arriving flight houston orlando EOS	O B-flight_mod I-flight_mod O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS earliest arriving flight houston orlando EOS	O B-flight_mod I-flight_mod O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights houston orlando EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights houston orlando EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights houston orlando EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS list flights leaving denver 8 pm 9 pm EOS	O O O O B-fromloc.city_name B-depart_time.start_time I-depart_time.start_time B-depart_time.end_time I-depart_time.end_time atis_flight
+BOS seating capacity aircraft 733 EOS	O O O O B-aircraft_code atis_capacity
+BOS seating capacity 72s EOS	O O O B-aircraft_code atis_capacity
+BOS seating capacity aircraft 72s EOS	O O O O B-aircraft_code atis_capacity
+BOS seating capacity aircraft m80 EOS	O O O O B-aircraft_code atis_capacity
+BOS seating capacity type aircraft m80 EOS	O O O O O B-aircraft_code atis_capacity
+BOS seating capacity m80 EOS	O O O B-aircraft_code atis_capacity
+BOS airlines serve denver EOS	O O O B-city_name atis_airline
+BOS list airlines flights denver EOS	O O O O B-city_name atis_airline
+BOS airlines fly denver EOS	O O O B-toloc.city_name atis_airline
+BOS list flights arriving denver 8 9 pm EOS	O O O O B-toloc.city_name B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS capacity 73s EOS	O O B-aircraft_code atis_capacity
+BOS 73s EOS	O B-aircraft_code atis_abbreviation
+BOS seating capacity aircraft 73s EOS	O O O O B-aircraft_code atis_capacity
+BOS seating capacity 757 EOS	O O O B-aircraft_code atis_capacity
+BOS many people 757 hold EOS	O O O B-aircraft_code O atis_capacity
+BOS many passengers fly 757 EOS	O O O O B-aircraft_code atis_capacity
+BOS list daily flights arriving denver 8 9 pm EOS	O O B-flight_days O O B-toloc.city_name B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS list daily flights arriving denver 8 9 pm EOS	O O B-flight_days O O B-toloc.city_name B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS show daily flights arriving denver 8 pm 9 pm EOS	O O B-flight_days O O B-toloc.city_name B-arrive_time.start_time I-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS seating capacity 757 EOS	O O O B-aircraft_code atis_capacity
+BOS tell m80 aircraft EOS	O O B-aircraft_code O atis_aircraft
+BOS tell m80 aircraft EOS	O O B-aircraft_code O atis_aircraft
+BOS tell type aircraft called m80 EOS	O O O O O B-aircraft_code atis_aircraft
+BOS seating capacity 733 EOS	O O O B-aircraft_code atis_capacity
+BOS seating capacity m80 EOS	O O O B-aircraft_code atis_capacity
+BOS seating capacity aircraft m80 EOS	O O O O B-aircraft_code atis_capacity
+BOS list flights arriving leaving denver 8 9 pm EOS	O O O O O B-city_name B-depart_time.start_time B-depart_time.end_time I-depart_time.end_time atis_flight
+BOS list flights arriving denver 8 9 pm EOS	O O O O B-toloc.city_name B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS list flights types aircraft arriving denver 8 9 pm EOS	O O O O O O B-toloc.city_name B-arrive_time.start_time B-arrive_time.end_time I-arrive_time.end_time atis_flight
+BOS please list flights nashville memphis monday morning EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS please list flights nashville memphis monday morning EOS	O O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS ground transportation memphis airport town arrive 842 morning EOS	O O O B-airport_name I-airport_name O O O B-period_of_day atis_ground_service
+BOS please list flights memphis new york city monday night EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS cvg EOS	O B-airport_code atis_abbreviation
+BOS ground transportation available la guardia airport new york city EOS	O O O O B-airport_name I-airport_name I-airport_name B-city_name I-city_name I-city_name atis_ground_service
+BOS ground transportation lga new york city EOS	O O O B-airport_code B-city_name I-city_name I-city_name atis_ground_service
+BOS please list ground transportation lga new york city EOS	O O O O O B-airport_code B-city_name I-city_name I-city_name atis_ground_service
+BOS please list ground transportation ewr new york city EOS	O O O O O B-airport_code B-city_name I-city_name I-city_name atis_ground_service
+BOS show morning flights memphis new york city EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name atis_flight
+BOS give flights new york city nashville leaving 5 pm wednesday EOS	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_time.time I-depart_time.time B-depart_date.day_name atis_flight
+BOS tell ground transportation nashville airport EOS	O O O O B-airport_name I-airport_name atis_ground_service
+BOS nonstop flights cincinnati charlotte leaving noon arriving 7 pm EOS	O B-flight_stop O B-fromloc.city_name B-toloc.city_name O B-depart_time.period_of_day O B-arrive_time.time I-arrive_time.time atis_flight
+BOS many flights alaska airlines burbank EOS	O O O B-airline_name I-airline_name B-toloc.city_name atis_flight
+BOS list alaska airline flights burbank anywhere EOS	O O B-airline_name I-airline_name O B-fromloc.city_name O atis_flight
+BOS list alaska airline flights burbank EOS	O O B-airline_name I-airline_name O B-fromloc.city_name atis_flight
+BOS airline EOS	O O atis_airline
+BOS list alaska airlines flights arriving burbank EOS	O O B-airline_name I-airline_name O O B-toloc.city_name atis_flight
+BOS list alaska airlines flights departing burbank EOS	O O B-airline_name I-airline_name O O B-fromloc.city_name atis_flight
+BOS list alaska airlines flights EOS	O O B-airline_name I-airline_name O atis_flight
+BOS list flights departing seattle EOS	O O O O B-fromloc.city_name atis_flight
+BOS list flights indianapolis memphis leave noon EOS	O O O B-fromloc.city_name B-toloc.city_name O B-depart_time.period_of_day atis_flight
+BOS list cheapest fare charlotte las vegas EOS	O O B-cost_relative O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_airfare
+BOS want flight los angeles charlotte early morning EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_time.period_mod B-depart_time.period_of_day atis_flight
+BOS would like morning flight charlotte newark EOS	O O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS like morning flight newark los angeles EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS like evening flight newark los angeles EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS would like flight leaves sunday montreal quebec san diego california EOS	O O O O O B-depart_date.day_name B-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name B-toloc.state_name atis_flight
+BOS would like flight tuesday leaves san diego indianapolis indiana leaves afternoon EOS	O O O O B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name O B-depart_time.period_of_day atis_flight
+BOS would like leave thursday morning indianapolis toronto EOS	O O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like flight friday morning toronto montreal EOS	O O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name B-toloc.city_name atis_flight
+BOS would like flight cincinnati burbank american EOS	O O O O B-fromloc.city_name B-toloc.city_name B-airline_name atis_flight
+BOS type aircraft used american flight leaving 419 pm EOS	O O O O B-airline_name O O B-depart_time.time I-depart_time.time atis_aircraft
+BOS need flight leaving kansas city chicago leaving next wednesday returning following day EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name O I-return_date.date_relative I-return_date.date_relative atis_flight
+BOS flights go long beach st. louis EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights memphis las vegas EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights las vegas ontario EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights ontario memphis EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS type ground transportation las vegas airport EOS	O O O O B-airport_name I-airport_name I-airport_name atis_ground_service
+BOS taxi service ontario airport EOS	O B-transport_type I-transport_type B-airport_name I-airport_name atis_ground_service
+BOS flights tampa milwaukee EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights milwaukee seattle EOS	O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights la guardia san jose united EOS	O O B-fromloc.airport_name I-fromloc.airport_name B-toloc.city_name I-toloc.city_name B-airline_name atis_flight
+BOS flights mondays travel charlotte north carolina phoenix arizona EOS	O O B-depart_date.day_name O B-fromloc.city_name B-fromloc.state_name I-fromloc.state_name B-toloc.city_name B-toloc.state_name atis_flight
+BOS flights phoenix arizona st. paul minnesota tuesday EOS	O O B-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name B-toloc.state_name B-depart_date.day_name atis_flight
+BOS flights thursday leaving st. paul minnesota st. louis EOS	O O B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights st. louis charlotte north carolina leaving friday EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name I-toloc.state_name O B-depart_date.day_name atis_flight
+BOS flights boston orlando stop new york EOS	O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS need morning flight burbank milwaukee next monday EOS	O O B-depart_time.period_of_day O B-fromloc.city_name B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name atis_flight
+BOS flight milwaukee st. louis leaves monday night EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS flight st. louis burbank leaves tuesday afternoon EOS	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day atis_flight
+BOS flight leaving tuesday night st. louis burbank EOS	O O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS need flight salt lake newark airport arrives saturday 6 pm EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.airport_name I-toloc.airport_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS like flight cincinnati newark airport arrives saturday 6 pm EOS	O O O B-fromloc.city_name B-toloc.airport_name I-toloc.airport_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS need flight american airlines miami chicago arrives around 5 pm EOS	O O O B-airline_name I-airline_name B-fromloc.city_name B-toloc.city_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS need flight memphis tacoma goes los angeles EOS	O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS flights cincinnati san jose california leave 6 pm EOS	O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-toloc.state_name O B-depart_time.time I-depart_time.time atis_flight
+BOS nonstop flights san jose houston texas EOS	O B-flight_stop O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name atis_flight
+BOS nonstop flights houston memphis EOS	O B-flight_stop O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights memphis cincinnati wednesday EOS	O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS american flights newark nashville EOS	O B-airline_name O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS flights ontario westchester stop chicago EOS	O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name atis_flight
+BOS please list flights los angeles charlotte EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS please list flights charlotte newark EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please list flights newark los angeles EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS please list flights cincinnati burbank american airlines EOS	O O O O B-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS please give flights kansas city chicago june sixteenth EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS please give flights chicago kansas city june seventeenth EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS please list flights kansas city chicago june sixteenth EOS	O O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS please list flights chicago kansas city june seventeenth EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number atis_flight
+BOS like travel burbank milwaukee EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS find flight salt lake city new york city next saturday arriving 6 pm EOS	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.date_relative B-depart_date.day_name O B-arrive_time.time I-arrive_time.time atis_flight
+BOS find another flight cincinnati new york saturday 6 pm EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time atis_flight
+BOS list delta flights salt lake city new york next saturday arriving 6 pm EOS	O O B-airline_name O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.date_relative B-depart_date.day_name O B-arrive_time.time I-arrive_time.time atis_flight
+BOS like fly miami chicago american airlines arriving around 5 pm EOS	O O O B-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time atis_flight
+BOS like travel kansas city chicago next wednesday EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name atis_flight
+BOS like round trip flight kansas city chicago wednesday may twenty sixth arriving 7 pm EOS	O O B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O B-arrive_time.time I-arrive_time.time atis_flight
+BOS yes like find flight memphis tacoma stopping los angeles EOS	O O O O O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS find flight san diego phoenix monday EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS find flight phoenix detroit monday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS find flight detroit san diego tuesday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS find flight cincinnati san jose monday EOS	O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-depart_date.day_name atis_flight
+BOS find flight san jose houston wednesday EOS	O O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS find flight houston memphis friday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS find flight memphis cincinnati sunday EOS	O O O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name atis_flight
+BOS find american flight newark nashville around 630 pm EOS	O O B-airline_name O B-fromloc.city_name B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time atis_flight
+BOS please find flight round trip los angeles tacoma washington stopover san francisco exceeding price 300 dollars june tenth 1993 EOS	O O O O B-round_trip I-round_trip B-fromloc.city_name I-fromloc.city_name B-toloc.city_name B-toloc.state_name O B-stoploc.city_name I-stoploc.city_name I-cost_relative O B-fare_amount I-fare_amount B-depart_date.month_name B-depart_date.day_number B-depart_date.year atis_flight
+BOS flights june tenth burbank tacoma EOS	O O B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name B-toloc.city_name atis_flight
+BOS please find flight ontario westchester makes stop chicago may seventeenth one way dinner EOS	O O O O B-fromloc.city_name B-toloc.city_name O O B-stoploc.city_name B-depart_date.month_name B-depart_date.day_number B-round_trip I-round_trip B-meal_description atis_flight
+BOS like book flight burbank milwaukee EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS show flights burbank milwaukee EOS	O O O B-fromloc.city_name B-toloc.city_name atis_flight
+BOS find flights milwaukee st. louis EOS	O O O B-fromloc.city_name B-city_name I-city_name atis_flight
+BOS show flights st. louis burbank EOS	O O O B-city_name I-city_name B-toloc.city_name atis_flight
+BOS one airline flies burbank milwaukee milwaukee st. louis st. louis burbank EOS	O O O O B-fromloc.city_name B-toloc.city_name B-fromloc.city_name B-toloc.city_name I-toloc.city_name B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_airline
+BOS find round trip flights burbank milwaukee stopping st. louis EOS	O O B-round_trip I-round_trip O B-fromloc.city_name B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name atis_flight
+BOS like book two flights westchester county EOS	O O O O O B-toloc.city_name I-toloc.city_name atis_flight
+BOS want book flight salt lake city westchester county EOS	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-toloc.city_name I-toloc.city_name atis_flight
+BOS tell airports near westchester county EOS	O O O O B-city_name I-city_name atis_airport
+BOS like book flight cincinnati new york city united airlines next saturday EOS	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name I-toloc.city_name B-airline_name I-airline_name B-depart_date.date_relative B-depart_date.day_name atis_flight
+BOS tell airports new york city area EOS	O O O B-city_name I-city_name I-city_name O atis_airport
+BOS please find flights cincinnati airport new york city area arrive next saturday 6 pm EOS	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-arrive_date.date_relative B-arrive_date.day_name B-arrive_time.time I-arrive_time.time atis_flight
+BOS find flight cincinnati airport new york city area EOS	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O atis_flight
+BOS like fly miami chicago american airlines EOS	O O O B-fromloc.city_name B-toloc.city_name B-airline_name I-airline_name atis_flight
+BOS would like book round trip flight kansas city chicago EOS	O O O O B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name atis_flight
+BOS find flight flies memphis tacoma EOS	O O O O B-fromloc.city_name B-toloc.city_name atis_flight

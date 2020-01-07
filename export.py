@@ -86,14 +86,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--format", 
         choices=["atis", "snips"],
-        help="Esolha uma formatação de texto.")
+        help="Choice a text format.")
     
     parser.add_argument("--dataset", 
         choices=["atis", "snips", "fb_en", "fb_es"],
-        help="Esolha uma base de dados.")
+        help="Choice a dataset.")
     parser.add_argument("--transform",
         choices=["normal", "stem", "stopwords", "lemma"],
-        help="Escolha um tipo de transformação textual.")
+        help="Choice a type of text transform.")
     args = parser.parse_args()
     
     if args.format == "atis" and args.dataset == "atis" and args.transform == "normal":

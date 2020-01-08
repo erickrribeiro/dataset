@@ -56,7 +56,7 @@ def export_as_snips(dataset, split, transform):
 
     in_write = open(f"{mode['dir']}/seq.in", "w")
     out_write = open(f"{mode['dir']}/seq.out", "w")
-    label_write = open(f"{mode['dir']}/label.out", "w")
+    label_write = open(f"{mode['dir']}/label", "w")
 
     with open(mode["origin"]) as infile:
         data = infile.readlines()
